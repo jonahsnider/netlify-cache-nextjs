@@ -1,10 +1,10 @@
 # [TypeScript](https://www.typescriptlang.org) Starter
 
-[![Build Status](https://github.com/pizzafox/typescript-starter/workflows/CI/badge.svg)](https://github.com/pizzafox/typescript-starter/actions)
+[![Build Status](https://github.com/pizzafox/netlify-cache-nextjs/workflows/CI/badge.svg)](https://github.com/pizzafox/netlify-cache-nextjs/actions)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
-[![codecov](https://codecov.io/gh/pizzafox/typescript-starter/branch/master/graph/badge.svg)](https://codecov.io/gh/pizzafox/typescript-starter)
+[![codecov](https://codecov.io/gh/pizzafox/netlify-cache-nextjs/branch/master/graph/badge.svg)](https://codecov.io/gh/pizzafox/netlify-cache-nextjs)
 
-My personal TypeScript starter template.
+Cache the `.next` folder in Netlify builds.
 
 ## Prequisites
 
@@ -64,4 +64,4 @@ yarn run test
 ### Coverage
 
 This will generate a `coverage` folder which has a breakdown of coverage of the project.
-The CI will upload the coverage information to [CodeCov](https://codecov.io) which can be [viewed here](https://codecov.io/gh/pizzafox/typescript-starter).
+The CI will upload the coverage information to [CodeCov](https://codecov.io) which can be [viewed here](https://codecov.io/gh/pizzafox/netlify-cache-nextjs).
