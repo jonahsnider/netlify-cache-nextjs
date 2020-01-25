@@ -1,0 +1,73 @@
+{
+	"author": {
+		"email": "jonah@jonah.pw",
+		"name": "Jonah Snider",
+		"url": "https://jonah.pw"
+	},
+	"ava": {
+		"extensions": [
+			"ts"
+		],
+		"files": [
+			"!tsc_output"
+		],
+		"require": [
+			"ts-node/register",
+			"source-map-support/register"
+		]
+	},
+	"bugs": {
+		"url": "https://github.com/pizzafox/typescript-starter/issues"
+	},
+	"devDependencies": {
+		"@istanbuljs/nyc-config-typescript": "^1.0.1",
+		"@typescript-eslint/eslint-plugin": "^2.17.0",
+		"@typescript-eslint/parser": "^2.17.0",
+		"ava": "^3.0.0",
+		"eslint-config-xo-typescript": "^0.24.1",
+		"nyc": "^15.0.0",
+		"prettier": "^1.19.1",
+		"source-map-support": "^0.5.16",
+		"ts-node": "^8.6.2",
+		"typescript": "^3.7.5",
+		"xo": "^0.25.3"
+	},
+	"engines": {
+		"node": "12"
+	},
+	"license": "Apache-2.0",
+	"main": "./tsc_output/src/index.js",
+	"name": "typescript-starter",
+	"nyc": {
+		"all": true,
+		"extends": "@istanbuljs/nyc-config-typescript",
+		"include": [
+			"src/**/*.ts"
+		],
+		"reporter": [
+			"lcov",
+			"cobertura"
+		]
+	},
+	"private": true,
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/pizzafox/typescript-starter.git"
+	},
+	"scripts": {
+		"build": "tsc",
+		"lint": "xo",
+		"prebuild": "rm -rf tsc_output",
+		"pretest": "rm -rf coverage .nyc_output",
+		"style": "prettier --ignore-path .gitignore --check \"./**/*.{{j,t}{s,sx},flow,{sc,c,le}ss,json,m{d,dx},{y,ya}ml}\"",
+		"test": "nyc ava"
+	},
+	"version": "1.0.0",
+	"xo": {
+		"extends": "xo-typescript",
+		"extensions": [
+			"ts"
+		],
+		"prettier": true
+	}
+}

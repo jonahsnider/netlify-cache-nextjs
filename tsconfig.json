@@ -1,0 +1,13 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"outDir": "tsc_output",
+		"resolveJsonModule": true,
+		"sourceMap": true,
+		"strict": true,
+		"target": "es2018"
+	},
+	"exclude": ["node_modules", "nyc_output", "coverage"],
+	"include": ["src", "test"]
+}
