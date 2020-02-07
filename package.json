@@ -11,7 +11,7 @@
 		"@netlify/cache-utils": "^0.1.2"
 	},
 	"devDependencies": {
-		"@typescript-eslint/eslint-plugin": "^2.18.0",
+		"@typescript-eslint/eslint-plugin": "^2.19.0",
 		"@typescript-eslint/parser": "^2.17.0",
 		"eslint-config-xo-typescript": "^0.24.1",
 		"prettier": "^1.19.1",
