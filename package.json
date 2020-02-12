@@ -16,7 +16,7 @@
 		"eslint-config-xo-typescript": "^0.24.1",
 		"prettier": "^1.19.1",
 		"typescript": "^3.7.5",
-		"xo": "^0.25.3"
+		"xo": "^0.25.4"
 	},
 	"engines": {
 		"node": "12"
