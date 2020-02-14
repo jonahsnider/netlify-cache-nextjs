@@ -22,6 +22,12 @@
 	"engines": {
 		"node": "12"
 	},
+	"keywords": [
+		"netlify",
+		"netlify-plugin",
+		"next.js",
+		"nextjs"
+	],
 	"license": "Apache-2.0",
 	"main": "./tsc_output/src/index.js",
 	"name": "netlify-plugin-cache-nextjs",
