@@ -23,7 +23,7 @@
 	},
 	"license": "Apache-2.0",
 	"main": "./tsc_output/src/index.js",
-	"name": "netlify-cache-nextjs",
+	"name": "netlify-plugin-cache-nextjs",
 	"private": true,
 	"repository": {
 		"type": "git",
@@ -35,7 +35,7 @@
 		"prebuild": "rm -rf tsc_output",
 		"style": "prettier --ignore-path .gitignore --check \"./**/*.{{j,t}{s,sx},flow,{sc,c,le}ss,json,m{d,dx},{y,ya}ml}\""
 	},
-	"version": "1.0.0",
+	"version": "0.0.0-development",
 	"xo": {
 		"extends": "xo-typescript",
 		"extensions": [
