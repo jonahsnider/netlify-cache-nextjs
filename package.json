@@ -25,7 +25,6 @@
 	"license": "Apache-2.0",
 	"main": "./tsc_output/src/index.js",
 	"name": "netlify-plugin-cache-nextjs",
-	"private": true,
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/pizzafox/netlify-cache-nextjs.git"
