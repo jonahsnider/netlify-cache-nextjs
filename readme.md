@@ -1,16 +1,24 @@
 # Netlify Next.js cache
 
+[![npm](https://img.shields.io/npm/v/netlify-plugin-cache-nextjs)](https://www.npmjs.com/package/netlify-plugin-cache-nextjs)
 [![Build Status](https://github.com/pizzafox/netlify-cache-nextjs/workflows/CI/badge.svg)](https://github.com/pizzafox/netlify-cache-nextjs/actions)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
 
 Cache the `.next` folder in Netlify builds.
-A [Netlify plugin](https://www.netlify.com/build/plugins-beta/).
+A [Netlify plugin](https://www.netlify.com/build/plugins-beta/) [published on npm](https://www.npmjs.com/package/netlify-plugin-cache-nextjs).
 
 ## Usage
 
 This is a Netlify plugin, which will run during your Netlify builds.
 As of now, Netlify plugins are in closed beta.
 You can learn more about them, and apply for the beta [here](https://www.netlify.com/build/plugins-beta/).
+
+The npm package name is [`netlify-plugin-cache-nextjs`](https://www.npmjs.com/package/netlify-plugin-cache-nextjs).
+
+```yaml
+plugins:
+  - type: netlify-plugin-cache-nextjs
+```
 
 ## Contributing
 
