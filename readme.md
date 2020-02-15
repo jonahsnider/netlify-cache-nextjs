@@ -37,7 +37,6 @@ yarn install
 ### Building
 
 Run the `build` script to compile the TypeScript into the `tsc_output` folder.
-This will compile the `src` and the `test` directory, so be careful not to upload the whole folder as a published package.
 
 ### Style
 
