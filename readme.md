@@ -5,7 +5,7 @@
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
 
 Cache the `.next` folder in Netlify builds.
-A [Netlify plugin](https://www.netlify.com/build/plugins-beta/) [published on npm](https://www.npmjs.com/package/netlify-plugin-cache-nextjs).
+A [Netlify plugin](https://www.netlify.com/build/plugins-beta/) which is [published on npm](https://www.npmjs.com/package/netlify-plugin-cache-nextjs).
 
 ## Usage
 
