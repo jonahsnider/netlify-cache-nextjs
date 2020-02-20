@@ -16,7 +16,7 @@
 		"eslint-config-xo-typescript": "^0.26.0",
 		"prettier": "^1.19.1",
 		"semantic-release": "^17.0.4",
-		"typescript": "^3.7.5",
+		"typescript": "^3.8.2",
 		"xo": "^0.26.1"
 	},
 	"engines": {
