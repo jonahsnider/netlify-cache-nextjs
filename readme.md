@@ -9,16 +9,18 @@ A [Netlify plugin](https://www.netlify.com/build/plugins-beta/) which is [publis
 
 ## Usage
 
-This is a Netlify plugin, which will run during your Netlify builds.
-As of now, Netlify plugins are in closed beta.
-You can learn more about them, and apply for the beta [here](https://www.netlify.com/build/plugins-beta/).
+This is a Netlify plugin, which will run during your Netlify builds. You can learn more about Netlify Build Plugins (currently in beta) in the [Netlify docs](https://docs.netlify.com/configure-builds/plugins).
 
 The npm package name is [`netlify-plugin-cache-nextjs`](https://www.npmjs.com/package/netlify-plugin-cache-nextjs).
 
-```yaml
-plugins:
-  - type: netlify-plugin-cache-nextjs
+To install, add the following lines to your `netlify.toml` file:
+
+```toml
+[[plugins]]
+package = "netlify-plugin-cache-nextjs"
 ```
+
+Note: The `[[plugins]]` line is required for each plugin, even if you have other plugins in your `netlify.toml` file already.
 
 ## Contributing
 
