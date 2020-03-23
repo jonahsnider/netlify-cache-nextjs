@@ -7,15 +7,9 @@ interface NetlifyUtils {
 	};
 }
 
-interface NetlifyConstants {
-	BUILD_DIR: string;
-}
-
 interface NetlifyOpts {
 	utils: NetlifyUtils;
-	constants: NetlifyConstants;
-	inputs: Record<string, any>;
-	netlifyConfig: Record<string, any>;
+	netlifyConfig: {build: {base: string}};
 }
 
 const buildCachePath = '.next';
@@ -27,22 +21,11 @@ module.exports = {
 	// Does not do anything if:
 	//  - the file/directory already exists locally
 	//  - the file/directory has not been cached yet
-	async onPreBuild({utils, constants, inputs, netlifyConfig}: NetlifyOpts) {
-		console.debug('<- DEBUG     ->');
-		console.debug('<- CONSTANTS ->');
-		console.debug(constants);
-		console.debug('<- CONSTANTS ->');
-		console.debug('<- INPUTS    ->');
-		console.debug(inputs);
-		console.debug('<- INPUTS    ->');
-		console.debug('<- CONFIG    ->');
-		console.log(netlifyConfig);
-		console.debug('<- CONFIG    ->');
-		console.debug('<- DEBUG     ->');
-		const directory = joinPaths(constants.BUILD_DIR, buildCachePath);
+	async onPreBuild({utils, netlifyConfig}: NetlifyOpts) {
+		const directory = joinPaths(netlifyConfig.build.base, buildCachePath);
 
 		const success = await utils.cache.restore(directory, {
-			digest: [joinPaths(constants.BUILD_DIR, manifestPath)]
+			digest: [joinPaths(netlifyConfig.build.base, manifestPath)]
 		});
 
 		if (success) {
@@ -57,11 +40,11 @@ module.exports = {
 	//  - the file/directory is already cached and its contents has not changed
 	//    If this is a directory, this includes children's contents
 	// Note that this will cache after the build, even if it fails, which fcould be unwanted behavior
-	async onPostBuild({utils, constants}: NetlifyOpts) {
-		const directory = joinPaths(constants.BUILD_DIR, buildCachePath);
+	async onPostBuild({utils, netlifyConfig}: NetlifyOpts) {
+		const directory = joinPaths(netlifyConfig.build.base, buildCachePath);
 
 		const success = await utils.cache.save(directory, {
-			digest: [joinPaths(constants.BUILD_DIR, manifestPath)]
+			digest: [joinPaths(netlifyConfig.build.base, manifestPath)]
 		});
 
 		if (success) {
