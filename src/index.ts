@@ -8,12 +8,12 @@ interface NetlifyUtils {
 }
 
 interface NetlifyConstants {
-  BUILD_DIR: string
+	BUILD_DIR: string;
 }
 
 interface NetlifyOpts {
-  utils: NetlifyUtils,
-  constants: NetlifyConstants
+	utils: NetlifyUtils;
+	constants: NetlifyConstants;
 }
 
 module.exports = {
