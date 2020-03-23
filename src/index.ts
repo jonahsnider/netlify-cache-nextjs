@@ -14,6 +14,8 @@ interface NetlifyConstants {
 interface NetlifyOpts {
 	utils: NetlifyUtils;
 	constants: NetlifyConstants;
+	inputs: Record<string, any>;
+	netlifyConfig: Record<string, any>;
 }
 
 const buildCachePath = '.next';
@@ -25,7 +27,18 @@ module.exports = {
 	// Does not do anything if:
 	//  - the file/directory already exists locally
 	//  - the file/directory has not been cached yet
-	async onPreBuild({utils, constants}: NetlifyOpts) {
+	async onPreBuild({utils, constants, inputs, netlifyConfig}: NetlifyOpts) {
+		console.debug('<- DEBUG     ->');
+		console.debug('<- CONSTANTS ->');
+		console.debug(constants);
+		console.debug('<- CONSTANTS ->');
+		console.debug('<- INPUTS    ->');
+		console.debug(inputs);
+		console.debug('<- INPUTS    ->');
+		console.debug('<- CONFIG    ->');
+		console.log(netlifyConfig);
+		console.debug('<- CONFIG    ->');
+		console.debug('<- DEBUG     ->');
 		const directory = joinPaths(constants.BUILD_DIR, buildCachePath);
 
 		const success = await utils.cache.restore(directory, {
