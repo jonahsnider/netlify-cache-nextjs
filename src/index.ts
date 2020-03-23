@@ -13,7 +13,7 @@ module.exports = {
 	// Does not do anything if:
 	//  - the file/directory already exists locally
 	//  - the file/directory has not been cached yet
-	async onGetCache({utils}: {utils: NetlifyUtils}) {
+	async onPreBuild({utils}: {utils: NetlifyUtils}) {
 		await utils.cache.restore(joinPaths(__dirname, '.next'), {digest: [joinPaths(__dirname, '.next', 'build-manifest.json')]});
 	},
 	// Cache file/directory for future builds.
@@ -21,7 +21,8 @@ module.exports = {
 	//  - the file/directory does not exist locally
 	//  - the file/directory is already cached and its contents has not changed
 	//    If this is a directory, this includes children's contents
-	async onSaveCache({utils}: {utils: NetlifyUtils}) {
+	// Note that this will cache after the build, even if it fails, which fcould be unwanted behavior
+	async onPostBuild({utils}: {utils: NetlifyUtils}) {
 		await utils.cache.save(joinPaths(__dirname, '.next'), {digest: [joinPaths(__dirname, '.next', 'build-manifest.json')]});
 	}
 };
