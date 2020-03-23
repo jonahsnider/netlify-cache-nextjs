@@ -5,7 +5,7 @@ interface NetlifyUtils {
 	};
 }
 
-export default {
+module.exports = {
 	name: 'cache-nextjs',
 	// Restore file/directory cached in previous builds.
 	// Does not do anything if:
