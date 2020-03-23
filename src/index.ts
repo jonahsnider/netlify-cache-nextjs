@@ -16,6 +16,9 @@ interface NetlifyOpts {
 	constants: NetlifyConstants;
 }
 
+const buildCachePath = '.next';
+const manifestPath = joinPaths(buildCachePath, 'build-manifest.json');
+
 module.exports = {
 	name: 'cache-nextjs',
 	// Restore file/directory cached in previous builds.
@@ -23,9 +26,17 @@ module.exports = {
 	//  - the file/directory already exists locally
 	//  - the file/directory has not been cached yet
 	async onPreBuild({utils, constants}: NetlifyOpts) {
-		await utils.cache.restore(joinPaths(constants.BUILD_DIR, '.next'), {
-			digest: [joinPaths(constants.BUILD_DIR, '.next', 'build-manifest.json')]
+		const directory = joinPaths(constants.BUILD_DIR, buildCachePath);
+
+		const success = await utils.cache.restore(directory, {
+			digest: [joinPaths(constants.BUILD_DIR, manifestPath)]
 		});
+
+		if (success) {
+			console.log(`Restored the cached .next folder at the location \`${directory}\``);
+		} else {
+			console.log(`Unable to restore the cached .next folder at the location \`${directory}\``);
+		}
 	},
 	// Cache file/directory for future builds.
 	// Does not do anything if:
@@ -34,8 +45,16 @@ module.exports = {
 	//    If this is a directory, this includes children's contents
 	// Note that this will cache after the build, even if it fails, which fcould be unwanted behavior
 	async onPostBuild({utils, constants}: NetlifyOpts) {
-		await utils.cache.save(joinPaths(constants.BUILD_DIR, '.next'), {
-			digest: [joinPaths(constants.BUILD_DIR, '.next', 'build-manifest.json')]
+		const directory = joinPaths(constants.BUILD_DIR, buildCachePath);
+
+		const success = await utils.cache.save(directory, {
+			digest: [joinPaths(constants.BUILD_DIR, manifestPath)]
 		});
+
+		if (success) {
+			console.log(`Cached the .next folder at the location \`${directory}\``);
+		} else {
+			console.error(`An error occurred and the .next folder at the location \`${directory}\` could not be cached`);
+		}
 	}
 };
