@@ -18,7 +18,18 @@ interface NetlifyOpts {
 	inputs: NetlifyInputs;
 }
 
-function generateAbsolutePaths(options: Pick<NetlifyOpts, 'inputs' | 'netlifyConfig'>) {
+function generateAbsolutePaths(
+	options: Pick<NetlifyOpts, 'inputs' | 'netlifyConfig'>
+): {
+	absolute: {
+		/** The absolute path to the build folder for Next.js. */
+		buildDir: string;
+		/** The absolute path to the build manifest Next.js uses. */
+		manifest: string;
+	};
+	/** The name of the build directory. */
+	buildDirName: string;
+} {
 	/** The name of the build folder. `.next`, unless specially configured. */
 	const buildDirName = options.inputs.custom_build_dir_name ?? '.next';
 	/** The directory the build folder is in. Defaults to current directory, although some larger repositories might keep this in a `frontend` folder. */
