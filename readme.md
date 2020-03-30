@@ -4,7 +4,7 @@
 [![Build Status](https://github.com/pizzafox/netlify-cache-nextjs/workflows/CI/badge.svg)](https://github.com/pizzafox/netlify-cache-nextjs/actions)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
 
-Cache the `.next` folder in Netlify builds.
+Cache the Next.js build folder in Netlify builds.
 A [Netlify plugin](https://www.netlify.com/build/plugins-beta/) which is [published on npm](https://www.npmjs.com/package/netlify-plugin-cache-nextjs).
 
 ## Usage
@@ -18,6 +18,20 @@ To install, add the following lines to your `netlify.toml` file:
 ```toml
 [[plugins]]
 package = "netlify-plugin-cache-nextjs"
+```
+
+And if you want to configure the plugin:
+
+```toml
+[[plugins]]
+package = "netlify-plugin-cache-nextjs"
+
+	# These options will cache the build directory at `${NETLIFY_BASE}/frontend/.next-build`
+	[plugins.inputs]
+	# The path to the build directory
+	build_dir_path = "frontend"
+	# Custom build directory if you aren't using `.next` (https://nextjs.org/docs/api-reference/next.config.js/setting-a-custom-build-directory)
+	custom_build_dir_name = ".next-build"
 ```
 
 Note: The `[[plugins]]` line is required for each plugin, even if you have other plugins in your `netlify.toml` file already.
