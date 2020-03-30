@@ -8,8 +8,11 @@ interface NetlifyUtils {
 }
 
 interface NetlifyInputs {
+	// The TOML config uses camelcase for readability and because it's convention
+	/* eslint-disable camelcase */
 	custom_build_dir_name?: string;
 	build_dir_path?: string;
+	/* eslint-enable camelcase */
 }
 
 interface NetlifyOpts {
