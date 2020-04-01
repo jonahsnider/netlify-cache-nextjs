@@ -2,8 +2,8 @@ import {join as joinPaths} from 'path';
 
 interface NetlifyUtils {
 	cache: {
-		restore(path: string, options: {digest: string[]}): Promise<any>;
-		save(path: string, options: {digest: string[]}): Promise<any>;
+		restore(path: string, options?: Partial<{move: boolean}>): Promise<any>;
+		save(path: string, options?: Partial<{digests: string[]; move: boolean; ttl: number}>): Promise<any>;
 	};
 }
 
@@ -39,9 +39,9 @@ function generateAbsolutePaths(
 	const buildDirPathFromProject = options.inputs.build_dir_path ?? '.';
 
 	/** The absolute path to the build folder for Next.js. */
-  const absoluteBuildDirPath = joinPaths(options.netlifyConfig.build.base, buildDirPathFromProject, buildDirName, 'cache');
-  /** The absolute path to the build manifest Next.js uses. */
-  // I don't actually know if this build manifest has any relation to the cache folder
+	const absoluteBuildDirPath = joinPaths(options.netlifyConfig.build.base, buildDirPathFromProject, buildDirName, 'cache');
+	/** The absolute path to the build manifest Next.js uses. */
+	// I don't actually know if this build manifest has any relation to the cache folder
 	const manifestPath = joinPaths(absoluteBuildDirPath, '..', 'build-manifest.json');
 
 	return {
@@ -79,7 +79,7 @@ module.exports = {
 		const paths = generateAbsolutePaths({netlifyConfig, inputs});
 
 		const success = await utils.cache.save(paths.absolute.buildDir, {
-			digest: [paths.absolute.manifest]
+			digests: [paths.absolute.manifest]
 		});
 
 		if (success) {
