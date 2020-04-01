@@ -60,9 +60,7 @@ module.exports = {
 	//  - the file/directory has not been cached yet
 	async onPreBuild({utils, netlifyConfig, inputs}: NetlifyOpts) {
 		const paths = generateAbsolutePaths({netlifyConfig, inputs});
-		const success = await utils.cache.restore(paths.absolute.buildDir, {
-			digest: [paths.absolute.manifest]
-		});
+		const success = await utils.cache.restore(paths.absolute.buildDir);
 
 		if (success) {
 			console.log(`Restored the cached ${paths.buildDirName} folder at the location \`${paths.absolute.buildDir}\``);
