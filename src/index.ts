@@ -36,9 +36,10 @@ function generateAbsolutePaths(
 	const buildDirPathFromProject = options.inputs.build_dir_path ?? '.';
 
 	/** The absolute path to the build folder for Next.js. */
-	const absoluteBuildDirPath = joinPaths(options.netlifyConfig.build.base, buildDirPathFromProject, buildDirName);
-	/** The absolute path to the build manifest Next.js uses. */
-	const manifestPath = joinPaths(absoluteBuildDirPath, 'build-manifest.json');
+  const absoluteBuildDirPath = joinPaths(options.netlifyConfig.build.base, buildDirPathFromProject, buildDirName, 'cache');
+  /** The absolute path to the build manifest Next.js uses. */
+  // I don't actually know if this build manifest has any relation to the cache folder
+	const manifestPath = joinPaths(absoluteBuildDirPath, '..', 'build-manifest.json');
 
 	return {
 		absolute: {
