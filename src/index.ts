@@ -75,7 +75,7 @@ module.exports = {
 	//  - the file/directory is already cached and its contents has not changed
 	//    If this is a directory, this includes children's contents
 	// Note that this will cache after the build, even if it fails, which fcould be unwanted behavior
-	async onPostBuild({utils, netlifyConfig, inputs}: NetlifyOpts) {
+	async onPostBuild({utils, inputs}: NetlifyOpts) {
 		const paths = generateAbsolutePaths({inputs});
 
 		const success = await utils.cache.save(paths.absolute.buildDir, {
