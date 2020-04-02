@@ -40,7 +40,8 @@ Note: The `[[plugins]]` line is required for each plugin, even if you have other
 
 ### Prequisites
 
-This project uses [Node.js](https://nodejs.org) 12 to run.
+This project uses any [Node.js](https://nodejs.org) version Netlify supports (8-13).
+For best results use the latest Node.js LTS version.
 
 This project uses [Yarn](https://yarnpkg.com) to install dependencies, although you can use another package manager like [npm](https://www.npmjs.com) or [pnpm](https://pnpm.js.org).
 
