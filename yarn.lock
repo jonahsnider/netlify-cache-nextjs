@@ -42,10 +42,10 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@netlify/cache-utils@^0.2.8":
-  version "0.2.8"
-  resolved "https://registry.yarnpkg.com/@netlify/cache-utils/-/cache-utils-0.2.8.tgz#c7ba3389853ea6611530b1361095858711290eee"
-  integrity sha512-gH04KLAnAs3HR/AGojWjFfvHbSSmypRZ7K7ca1r19agobjcH+IWrYLxHDcd1HtnvIpitWAYlT4YYGOajr1ywKg==
+"@netlify/cache-utils@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@netlify/cache-utils/-/cache-utils-0.4.0.tgz#5479671ad304b941eb0d5672a832d9e7a43d7e3e"
+  integrity sha512-8kZug9C34szPlTubUAiiAnaZ+2yvQcb2xAH+lyVlT7xua+7L0D85ktFAbGHOXRqSwHMXZjJOsqXRwUdVd8YCgA==
   dependencies:
     array-flat-polyfill "^1.0.1"
     cpy "^8.0.0"
