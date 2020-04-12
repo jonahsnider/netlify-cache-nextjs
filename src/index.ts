@@ -1,4 +1,5 @@
 import {join as joinPaths} from 'path';
+import {ReadonlyDeep} from 'type-fest';
 
 interface NetlifyUtils {
 	cache: {
@@ -9,10 +10,8 @@ interface NetlifyUtils {
 
 interface NetlifyInputs {
 	// The TOML config uses camelcase for readability and because it's convention
-	/* eslint-disable camelcase */
 	custom_build_dir_name?: string;
 	build_dir_path?: string;
-	/* eslint-enable camelcase */
 }
 
 interface NetlifyOpts {
@@ -22,7 +21,7 @@ interface NetlifyOpts {
 }
 
 function generateAbsolutePaths(
-	options: Pick<NetlifyOpts, 'inputs'>
+	options: ReadonlyDeep<Pick<NetlifyOpts, 'inputs'>>
 ): {
 	absolute: {
 		/** The absolute path to the build folder for Next.js. */
@@ -59,7 +58,7 @@ module.exports = {
 	// Does not do anything if:
 	//  - the file/directory already exists locally
 	//  - the file/directory has not been cached yet
-	async onPreBuild({utils, inputs}: NetlifyOpts) {
+	async onPreBuild({utils, inputs}: ReadonlyDeep<NetlifyOpts>) {
 		const paths = generateAbsolutePaths({inputs});
 		const success = await utils.cache.restore(paths.absolute.buildDir, {move: true});
 
@@ -75,7 +74,7 @@ module.exports = {
 	//  - the file/directory is already cached and its contents has not changed
 	//    If this is a directory, this includes children's contents
 	// Note that this will cache after the build, even if it fails, which fcould be unwanted behavior
-	async onPostBuild({utils, inputs}: NetlifyOpts) {
+	async onPostBuild({utils, inputs}: ReadonlyDeep<NetlifyOpts>) {
 		const paths = generateAbsolutePaths({inputs});
 
 		const success = await utils.cache.save(paths.absolute.buildDir, {
