@@ -11,7 +11,7 @@
 		"@netlify/cache-utils": "^0.4.1"
 	},
 	"devDependencies": {
-		"prettier": "^1.19.1",
+		"prettier": "^2.0.4",
 		"semantic-release": "^17.0.4",
 		"typescript": "^3.8.3",
 		"xo": "^0.29.0"
