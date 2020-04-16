@@ -1,6 +1,6 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
-	"extends": ["config:base"],
+	"extends": ["config:base", ":semanticCommitTypeAll(build)"],
 	"labels": ["dependencies"],
 	"packageRules": [
 		{
@@ -8,5 +8,5 @@
 			"updateTypes": ["patch"]
 		}
 	],
-	"semanticCommitType": "build"
+	"semanticCommits": true
 }
