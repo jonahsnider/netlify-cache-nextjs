@@ -1,0 +1,8 @@
+[build]
+	base = "./example"
+  publish = "./example"
+	command = "bash build.sh"
+
+# Cache Next.js build folder between Netlify builds
+[[plugins]]
+package = "netlify-plugin-cache-nextjs"

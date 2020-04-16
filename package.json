@@ -11,6 +11,7 @@
 		"@netlify/cache-utils": "^0.4.1"
 	},
 	"devDependencies": {
+		"netlify-cli": "^2.46.0",
 		"prettier": "^2.0.4",
 		"semantic-release": "^17.0.4",
 		"type-fest": "^0.13.1",
@@ -35,6 +36,7 @@
 	},
 	"scripts": {
 		"build": "tsc",
+		"e2e:local": "netlify build",
 		"lint": "xo",
 		"prebuild": "rm -rf tsc_output",
 		"style": "prettier --ignore-path .gitignore --check \"./**/*.{{j,t}{s,sx},flow,{sc,c,le}ss,json,m{d,dx},{y,ya}ml}\""
