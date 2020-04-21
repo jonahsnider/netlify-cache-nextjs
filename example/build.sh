@@ -1,7 +1,9 @@
 now=$(date +"%T")
 currentDate=$(date +"%a")
-path="./.next/cache/$currentDate.txt"
+path=".next/cache/$currentDate.txt"
 
-rm $path
+mkdir -p .next/cache
+
+rm -f $path
 
 echo $now >> $path
