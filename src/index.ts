@@ -10,8 +10,8 @@ interface NetlifyUtils {
 
 interface NetlifyInputs {
 	// The TOML config uses camelcase for readability and because it's convention
-	custom_build_dir_name?: string;
-	build_dir_path?: string;
+	custom_build_dir_name: string;
+	build_dir_path: string;
 }
 
 interface NetlifyOpts {
@@ -33,9 +33,9 @@ function generateAbsolutePaths(
 	buildDirName: string;
 } {
 	/** The name of the build folder. `.next`, unless specially configured. */
-	const buildDirName = options.inputs.custom_build_dir_name ?? '.next';
+	const buildDirName = options.inputs.custom_build_dir_name;
 	/** The directory the build folder is in. Defaults to current directory, although some larger repositories might keep this in a `frontend` folder. */
-	const buildDirPathFromProject = options.inputs.build_dir_path ?? '.';
+	const buildDirPathFromProject = options.inputs.build_dir_path;
 
 	/** The absolute path to the build folder for Next.js. */
 	const absoluteBuildDirPath = joinPaths(buildDirPathFromProject, buildDirName, 'cache');
@@ -53,19 +53,18 @@ function generateAbsolutePaths(
 }
 
 module.exports = {
-	name: 'cache-nextjs',
 	// Restore file/directory cached in previous builds.
 	// Does not do anything if:
 	//  - the file/directory already exists locally
 	//  - the file/directory has not been cached yet
 	async onPreBuild({utils, inputs}: ReadonlyDeep<NetlifyOpts>) {
 		const paths = generateAbsolutePaths({inputs});
-		const success = await utils.cache.restore(paths.absolute.buildDir, {move: true});
+		const success = await utils.cache.restore(paths.absolute.buildDir);
 
 		if (success) {
 			console.log(`Restored the cached ${paths.buildDirName} folder at the location \`${paths.absolute.buildDir}\``);
 		} else {
-			console.log(`Unable to restore the cached ${paths.buildDirName} folder at the location \`${paths.absolute.buildDir}\``);
+			console.log(`No cache found for the ${paths.buildDirName} folder at the location \`${paths.absolute.buildDir}\``);
 		}
 	},
 	// Cache file/directory for future builds.
@@ -78,14 +77,13 @@ module.exports = {
 		const paths = generateAbsolutePaths({inputs});
 
 		const success = await utils.cache.save(paths.absolute.buildDir, {
-			digests: [paths.absolute.manifest],
-			move: true
+			digests: [paths.absolute.manifest]
 		});
 
 		if (success) {
 			console.log(`Cached the ${paths.buildDirName} folder at the location \`${paths.absolute.buildDir}\``);
 		} else {
-			console.error(`An error occurred and the ${paths.buildDirName} folder at the location \`${paths.absolute.buildDir}\` could not be cached`);
+			console.log(`No ${paths.buildDirName} folder at the location \`${paths.absolute.buildDir}\``);
 		}
 	}
 };

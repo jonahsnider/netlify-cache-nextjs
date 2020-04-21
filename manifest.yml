@@ -1,0 +1,8 @@
+name: netlify-plugin-cache-nextjs
+inputs:
+  - name: build_dir_path
+    description: The directory the build folder is in
+    default: '.'
+  - name: custom_build_dir_name
+    description: The name of the build folder
+    default: '.next'
