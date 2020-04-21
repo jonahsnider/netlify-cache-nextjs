@@ -193,3 +193,6 @@ tsconfig.build.json
 tsconfig.json
 .editorconfig
 .yarnrc
+example
+renovate.json
+netlify.toml
