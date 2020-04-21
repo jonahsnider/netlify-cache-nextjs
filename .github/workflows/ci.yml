@@ -100,7 +100,6 @@ jobs:
         run: yarn run build
       - name: Use built version instead of published version
         run: yarn link "netlify-plugin-cache-nextjs"
-      - name: Overwrite downloaded plugin with this version
       - name: Run local Netlify build
         run: yarn run e2e:local
   style:
