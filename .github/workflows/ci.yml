@@ -138,6 +138,8 @@ jobs:
 
     needs: [lint, style, e2e-local]
 
+    if: ${{ github.ref  == 'refs/heads/master' }}
+
     steps:
       - name: Checkout git repository
         uses: actions/checkout@v2
