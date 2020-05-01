@@ -181,4 +181,4 @@ $RECYCLE.BIN/
 tsc_output
 
 # Local Netlify folder
-.netlify
+.netlify/cache*
