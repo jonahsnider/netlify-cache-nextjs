@@ -3,8 +3,8 @@ import {ReadonlyDeep} from 'type-fest';
 
 interface NetlifyUtils {
 	cache: {
-		restore(path: string, options?: Partial<{move: boolean}>): Promise<any>;
-		save(path: string, options?: Partial<{digests: string[]; move: boolean; ttl: number}>): Promise<any>;
+		restore: (path: string, options?: Partial<{move: boolean}>) => Promise<any>;
+		save: (path: string, options?: Partial<{digests: string[]; move: boolean; ttl: number}>) => Promise<any>;
 	};
 }
 
