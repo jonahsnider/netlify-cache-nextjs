@@ -14,7 +14,7 @@
 		"netlify-cli": "2.47.0",
 		"prettier": "2.0.4",
 		"semantic-release": "17.0.8",
-		"type-fest": "0.14.0",
+		"type-fest": "0.15.0",
 		"typescript": "3.8.3",
 		"xo": "0.30.0"
 	},
