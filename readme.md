@@ -5,11 +5,16 @@
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
 
 Cache the Next.js build folder in Netlify builds.
-A [Netlify plugin](https://www.netlify.com/build/plugins-beta/) which is [published on npm](https://www.npmjs.com/package/netlify-plugin-cache-nextjs).
+A [Netlify build plugin](https://docs.netlify.com/configure-builds/build-plugins/).
+
+```toml
+[[plugins]]
+package = "netlify-plugin-cache-nextjs"
+```
 
 ## Usage
 
-This is a Netlify plugin, which will run during your Netlify builds. You can learn more about Netlify Build Plugins (currently in beta) in the [Netlify docs](https://docs.netlify.com/configure-builds/plugins).
+This is a Netlify build plugin, which will run during your Netlify builds. You can learn more about Netlify Build Plugins in the [Netlify docs](https://docs.netlify.com/configure-builds/build-plugins/).
 
 The npm package name is [`netlify-plugin-cache-nextjs`](https://www.npmjs.com/package/netlify-plugin-cache-nextjs).
 
