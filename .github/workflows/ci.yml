@@ -11,12 +11,6 @@ jobs:
     steps:
       - name: Checkout git repository
         uses: actions/checkout@v2
-      - name: Setup Node.js for use with Actions
-        uses: actions/setup-node@v1
-        with:
-          node-version: '12.16.2'
-      - name: Install Yarn
-        run: curl -o- -L https://yarnpkg.com/install.sh | bash
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
         run: echo "::set-output name=dir::$(yarn cache dir)"
@@ -45,12 +39,6 @@ jobs:
     steps:
       - name: Checkout git repository
         uses: actions/checkout@v2
-      - name: Setup Node.js for use with Actions
-        uses: actions/setup-node@v1
-        with:
-          node-version: '12.16.2'
-      - name: Install Yarn
-        run: curl -o- -L https://yarnpkg.com/install.sh | bash
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
         run: echo "::set-output name=dir::$(yarn cache dir)"
@@ -74,12 +62,6 @@ jobs:
     steps:
       - name: Checkout git repository
         uses: actions/checkout@v2
-      - name: Setup Node.js for use with Actions
-        uses: actions/setup-node@v1
-        with:
-          node-version: '12.16.2'
-      - name: Install Yarn
-        run: curl -o- -L https://yarnpkg.com/install.sh | bash
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
         run: echo "::set-output name=dir::$(yarn cache dir)"
@@ -110,12 +92,6 @@ jobs:
     steps:
       - name: Checkout git repository
         uses: actions/checkout@v2
-      - name: Setup Node.js for use with Actions
-        uses: actions/setup-node@v1
-        with:
-          node-version: '12.16.2'
-      - name: Install Yarn
-        run: curl -o- -L https://yarnpkg.com/install.sh | bash
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
         run: echo "::set-output name=dir::$(yarn cache dir)"
@@ -143,12 +119,6 @@ jobs:
     steps:
       - name: Checkout git repository
         uses: actions/checkout@v2
-      - name: Setup Node.js for use with Actions
-        uses: actions/setup-node@v1
-        with:
-          node-version: '12.16.2'
-      - name: Install Yarn
-        run: curl -o- -L https://yarnpkg.com/install.sh | bash
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
         run: echo "::set-output name=dir::$(yarn cache dir)"
