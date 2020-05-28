@@ -84,6 +84,8 @@ jobs:
         run: yarn link "netlify-plugin-cache-nextjs"
       - name: Run local Netlify build
         run: yarn run e2e:local
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
   style:
     name: Check style
 
