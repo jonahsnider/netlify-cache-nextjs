@@ -11,7 +11,7 @@
 		"@netlify/cache-utils": "^0.4.1"
 	},
 	"devDependencies": {
-		"netlify-cli": "2.52.0",
+		"netlify-cli": "2.53.0",
 		"prettier": "2.0.4",
 		"semantic-release": "17.0.8",
 		"type-fest": "0.15.0",
