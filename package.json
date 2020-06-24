@@ -8,7 +8,7 @@
 		"url": "https://github.com/pizzafox/netlify-cache-nextjs/issues"
 	},
 	"dependencies": {
-		"@netlify/cache-utils": "^0.4.1"
+		"@netlify/cache-utils": "^1.0.0"
 	},
 	"devDependencies": {
 		"netlify-cli": "2.54.0",
