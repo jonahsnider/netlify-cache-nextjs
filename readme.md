@@ -1,11 +1,13 @@
 # Netlify Next.js cache
 
+Cache the Next.js build folder in Netlify builds.
+
 [![npm](https://img.shields.io/npm/v/netlify-plugin-cache-nextjs)](https://www.npmjs.com/package/netlify-plugin-cache-nextjs)
+[![downloads per week](https://img.shields.io/npm/dw/netlify-plugin-cache-nextjs)](https://www.npmjs.com/package/netlify-plugin-cache-nextjs)
 [![Build Status](https://github.com/pizzafox/netlify-cache-nextjs/workflows/CI/badge.svg)](https://github.com/pizzafox/netlify-cache-nextjs/actions)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
 
-Cache the Next.js build folder in Netlify builds.
-A [Netlify build plugin](https://docs.netlify.com/configure-builds/build-plugins/).
+A [Netlify build plugin](https://docs.netlify.com/configure-builds/build-plugins/), and [one of the most downloaded ones](https://www.netlify.com/blog/2020/06/22/top-10-netlify-build-plugins/#4-next-js-cache) at that.
 
 ```toml
 [[plugins]]
