@@ -30,7 +30,6 @@ And if you want to configure the plugin:
 ```toml
 [[plugins]]
 package = "netlify-plugin-cache-nextjs"
-
 	# These options will cache the build directory at `${NETLIFY_BASE}/frontend/.next-build`
 	[plugins.inputs]
 	# The path to the build directory
