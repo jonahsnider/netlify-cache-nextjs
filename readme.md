@@ -1,7 +1,8 @@
-# Netlify Next.js cache
+# [Netlify Next.js cache](https://app.netlify.com/plugins/netlify-plugin-cache-nextjs/install)
 
 Cache the Next.js build folder in Netlify builds.
 
+[![add to netlify](https://img.shields.io/badge/add%20to-netlify-00AD9F)](https://app.netlify.com/plugins/netlify-plugin-cache-nextjs/install)
 [![npm](https://img.shields.io/npm/v/netlify-plugin-cache-nextjs)](https://www.npmjs.com/package/netlify-plugin-cache-nextjs)
 [![downloads per week](https://img.shields.io/npm/dw/netlify-plugin-cache-nextjs)](https://www.npmjs.com/package/netlify-plugin-cache-nextjs)
 [![Build Status](https://github.com/pizzafox/netlify-cache-nextjs/workflows/CI/badge.svg)](https://github.com/pizzafox/netlify-cache-nextjs/actions)
@@ -9,18 +10,15 @@ Cache the Next.js build folder in Netlify builds.
 
 A [Netlify build plugin](https://docs.netlify.com/configure-builds/build-plugins/), and [one of the most downloaded ones](https://www.netlify.com/blog/2020/06/22/top-10-netlify-build-plugins/#4-next-js-cache) at that.
 
-```toml
-[[plugins]]
-package = "netlify-plugin-cache-nextjs"
-```
+[![add to netlify](https://img.shields.io/badge/add%20to-netlify-00AD9F)](https://app.netlify.com/plugins/netlify-plugin-cache-nextjs/install)
 
 ## Usage
 
 This is a Netlify build plugin, which will run during your Netlify builds. You can learn more about Netlify Build Plugins in the [Netlify docs](https://docs.netlify.com/configure-builds/build-plugins/).
 
-The npm package name is [`netlify-plugin-cache-nextjs`](https://www.npmjs.com/package/netlify-plugin-cache-nextjs).
+[![add to netlify](https://img.shields.io/badge/add%20to-netlify-00AD9F)](https://app.netlify.com/plugins/netlify-plugin-cache-nextjs/install)
 
-To install, add the following lines to your `netlify.toml` file:
+If you want to manually install the plugin add the following lines to your `netlify.toml` file:
 
 ```toml
 [[plugins]]
