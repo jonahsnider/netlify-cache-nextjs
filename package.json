@@ -13,7 +13,7 @@
 	"devDependencies": {
 		"netlify-cli": "2.54.0",
 		"prettier": "2.0.4",
-		"semantic-release": "17.1.0",
+		"semantic-release": "17.1.1",
 		"type-fest": "0.15.1",
 		"typescript": "3.9.3",
 		"xo": "0.32.0"
