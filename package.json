@@ -16,7 +16,7 @@
 		"semantic-release": "17.1.1",
 		"type-fest": "0.16.0",
 		"typescript": "3.9.3",
-		"xo": "0.32.0"
+		"xo": "0.32.1"
 	},
 	"engines": {
 		"node": ">=8.3.0"
