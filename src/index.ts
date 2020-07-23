@@ -1,15 +1,16 @@
+import {existsSync} from 'fs';
 import {join as joinPaths} from 'path';
 import {ReadonlyDeep} from 'type-fest';
 
 interface NetlifyUtils {
 	cache: {
-		restore: (path: string, options?: Partial<{move: boolean}>) => Promise<any>;
-		save: (path: string, options?: Partial<{digests: string[]; move: boolean; ttl: number}>) => Promise<any>;
+		restore: (path: string, options?: Partial<{cwd: string}>) => Promise<boolean>;
+		save: (path: string, options?: Partial<{digests: string[]; cwd: string; ttl: number}>) => Promise<boolean>;
 	};
 }
 
 interface NetlifyInputs {
-	// The TOML config uses camelcase for readability and because it's convention
+	// The TOML config uses snakecase for readability and because it's convention
 	custom_build_dir_name: string;
 	build_dir_path: string;
 }
@@ -61,10 +62,12 @@ module.exports = {
 		const paths = generateAbsolutePaths({inputs});
 		const success = await utils.cache.restore(paths.absolute.buildDir);
 
+		console.log(`${paths.absolute.buildDir} ${existsSync(paths.absolute.buildDir) ? 'exists' : 'does not exist'} on disk`);
+
 		if (success) {
 			console.log(`Restored the cached ${paths.buildDirName} folder at the location \`${paths.absolute.buildDir}\``);
 		} else {
-			console.log(`No cache found for the ${paths.buildDirName} folder at the location \`${paths.absolute.buildDir}\``);
+			console.log(`Couldn't restore the cache for the ${paths.buildDirName} folder at the location \`${paths.absolute.buildDir}\``);
 		}
 	},
 	// Cache file/directory for future builds.
@@ -76,6 +79,8 @@ module.exports = {
 	async onPostBuild({utils, inputs}: ReadonlyDeep<NetlifyOpts>) {
 		const paths = generateAbsolutePaths({inputs});
 
+		console.log(`${paths.absolute.buildDir} ${existsSync(paths.absolute.buildDir) ? 'exists' : 'does not exist'} on disk`);
+
 		const success = await utils.cache.save(paths.absolute.buildDir, {
 			digests: [paths.absolute.manifest]
 		});
@@ -83,7 +88,7 @@ module.exports = {
 		if (success) {
 			console.log(`Cached the ${paths.buildDirName} folder at the location \`${paths.absolute.buildDir}\``);
 		} else {
-			console.log(`No ${paths.buildDirName} folder at the location \`${paths.absolute.buildDir}\``);
+			console.log(`Couldn't cache the ${paths.buildDirName} folder at the location \`${paths.absolute.buildDir}\``);
 		}
 	}
 };
