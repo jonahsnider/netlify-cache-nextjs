@@ -7104,10 +7104,10 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   resolved "https://registry.yarnpkg.com/nested-error-stacks/-/nested-error-stacks-2.1.0.tgz#0fbdcf3e13fe4994781280524f8b96b0cdff9c61"
   integrity sha512-AO81vsIO1k1sM4Zrd6Hu7regmJN1NSiAja10gc4bX3F0wd+9rQmcuHQaHVQCYIEC8iFXnE+mavh23GOt7wBgug==
 
-netlify-cli@2.59.2:
-  version "2.59.2"
-  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-2.59.2.tgz#610bd5238d7aacac3665d7d7a42bd18e57219872"
-  integrity sha512-d6aLUd/2VKfdW4U2GeSFLPyJyM2tScyjHRfs2YaX0P4/hupS3klyOxZiS1IdwH1+t6YZobQEb4htkjTWj5i6gQ==
+netlify-cli@2.59.3:
+  version "2.59.3"
+  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-2.59.3.tgz#48d5dcea19186906914af626cada4652a3a18099"
+  integrity sha512-jzgadjzx2tWG6pEe9cDUtoxCaLYTi/kvc8SYd83lB3vvBwgBfTOHA2cTUwZpQ8kL4x6zm+I3ue2UjPtgPQ/oTQ==
   dependencies:
     "@netlify/build" "^3.1.10"
     "@netlify/config" "^2.0.9"
@@ -7191,7 +7191,7 @@ netlify-cli@2.59.2:
     strip-ansi-control-characters "^2.0.0"
     to-readable-stream "^2.1.0"
     update-notifier "^4.0.0"
-    uuid "^3.3.3"
+    uuid "^8.0.0"
     wait-port "^0.2.2"
     which "^2.0.2"
     winston "^3.2.1"
