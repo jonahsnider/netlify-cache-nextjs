@@ -4710,7 +4710,7 @@ eslint-plugin-jsx-a11y@^6.2.3:
     jsx-ast-utils "^2.4.1"
     language-tags "^1.0.5"
 
-eslint-plugin-prettier@^3.1.0, eslint-plugin-prettier@^3.1.4:
+eslint-plugin-prettier@3.1.4, eslint-plugin-prettier@^3.1.0:
   version "3.1.4"
   resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-3.1.4.tgz#168ab43154e2ea57db992a2cd097c828171f75c2"
   integrity sha512-jZDa8z76klRqo+TdGDTFJSavwbnWK2ZpqGKNZ+VvweMW516pDUMmQ2koXvxEE4JhzNvTv+radye/bWGBmA6jmg==
@@ -12158,7 +12158,7 @@ tsconfig-paths@^3.9.0:
     minimist "^1.2.0"
     strip-bom "^3.0.0"
 
-tsdx@^0.13.3:
+tsdx@0.13.3:
   version "0.13.3"
   resolved "https://registry.yarnpkg.com/tsdx/-/tsdx-0.13.3.tgz#b8a23ed1cb06f1d00bfd0f541f5d3cac90b611f5"
   integrity sha512-IzEzSygWpGC/E6UQ1rPxRRpeRLPQ3RBSmisTcX2p9PKFItrwG50MaW8DfVDIolkk4Xt9cYUfgjJ+g01qN2gMYQ==
