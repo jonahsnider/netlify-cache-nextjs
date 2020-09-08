@@ -52,7 +52,7 @@ jobs:
             ${{ runner.os }}-yarn-
       - name: Install dependencies with Yarn
         run: yarn install
-      - name: Lint with XO
+      - name: Lint
         run: yarn run lint
   e2e-local:
     name: Local end-to-end test
