@@ -8,19 +8,25 @@
 		"url": "https://github.com/pizzafox/netlify-cache-nextjs/issues"
 	},
 	"dependencies": {
-		"@netlify/cache-utils": "^1.0.0"
+		"@netlify/cache-utils": "1.0.2"
 	},
 	"devDependencies": {
 		"netlify-cli": "2.61.2",
 		"prettier": "2.0.4",
+		"prettier-config-xo": "1.0.3",
 		"semantic-release": "17.1.1",
-		"type-fest": "0.16.0",
+		"tsdx": "^0.13.3",
+		"tslib": "^2.0.1",
 		"typescript": "3.9.7",
 		"xo": "0.33.1"
 	},
 	"engines": {
 		"node": ">=8.3.0"
 	},
+	"files": [
+		"dist",
+		"src"
+	],
 	"keywords": [
 		"netlify",
 		"netlify-plugin",
@@ -28,19 +34,20 @@
 		"nextjs"
 	],
 	"license": "Apache-2.0",
-	"main": "./tsc_output/index.js",
+	"main": "dist/index.js",
+	"module": "dist/netlify-cache-nextjs.esm.js",
 	"name": "netlify-plugin-cache-nextjs",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/pizzafox/netlify-cache-nextjs.git"
 	},
 	"scripts": {
-		"build": "tsc",
+		"build": "tsdx build",
 		"e2e:local": "netlify build",
 		"lint": "xo",
-		"prebuild": "rm -rf tsc_output",
 		"style": "prettier --ignore-path .gitignore --check ."
 	},
+	"typings": "dist/index.d.ts",
 	"version": "0.0.0-development",
 	"xo": {
 		"prettier": true

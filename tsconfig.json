@@ -1,13 +1,14 @@
 {
 	"compilerOptions": {
-		"module": "commonjs",
+		"declaration": true,
+		"esModuleInterop": true,
+		"importHelpers": true,
+		"lib": ["dom", "esnext"],
+		"module": "esnext",
 		"moduleResolution": "node",
-		"outDir": "tsc_output",
-		"resolveJsonModule": true,
+		"rootDir": "./src",
 		"sourceMap": true,
-		"strict": true,
-		"target": "es2018"
+		"strict": true
 	},
-	"exclude": ["node_modules", "nyc_output", "coverage"],
-	"include": ["src", "test"]
+	"include": ["src", "types"]
 }
