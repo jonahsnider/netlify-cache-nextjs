@@ -25,7 +25,8 @@
 	},
 	"files": [
 		"dist",
-		"src"
+		"src",
+		"manifest.yml"
 	],
 	"keywords": [
 		"netlify",
