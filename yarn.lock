@@ -8642,10 +8642,10 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   resolved "https://registry.yarnpkg.com/nested-error-stacks/-/nested-error-stacks-2.1.0.tgz#0fbdcf3e13fe4994781280524f8b96b0cdff9c61"
   integrity sha512-AO81vsIO1k1sM4Zrd6Hu7regmJN1NSiAja10gc4bX3F0wd+9rQmcuHQaHVQCYIEC8iFXnE+mavh23GOt7wBgug==
 
-netlify-cli@2.61.3:
-  version "2.61.3"
-  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-2.61.3.tgz#82f7f7b6be297618919afc6fbba7c2fdc55448ac"
-  integrity sha512-KkCbrYZUx38MH948pdPjQVcMUP4uiQdchsuWpigIehvzKFelEog+W5ciw1Li1cPSinwt66Uzy0y/QBk/ENNhtg==
+netlify-cli@2.63.0:
+  version "2.63.0"
+  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-2.63.0.tgz#1a4516113aa5c8272023b91321d6eb26e3943380"
+  integrity sha512-lSYkjZzwvq7CSg3+qZnrBj6PiPDiva3bhMU8jIjYA/uXwR2YjKtTofyJ0jXrRrPzxhUFl1eLx6EJTIckD703wg==
   dependencies:
     "@netlify/build" "^3.1.10"
     "@netlify/config" "^2.0.9"
@@ -8689,6 +8689,7 @@ netlify-cli@2.61.3:
     gitconfiglocal "^2.1.0"
     http-proxy "^1.18.0"
     http-proxy-middleware "^1.0.0"
+    https-proxy-agent "^5.0.0"
     inquirer "^6.5.1"
     inquirer-autocomplete-prompt "^1.0.1"
     is-docker "^2.0.0"
