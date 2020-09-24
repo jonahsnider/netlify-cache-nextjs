@@ -8802,10 +8802,10 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   resolved "https://registry.yarnpkg.com/nested-error-stacks/-/nested-error-stacks-2.1.0.tgz#0fbdcf3e13fe4994781280524f8b96b0cdff9c61"
   integrity sha512-AO81vsIO1k1sM4Zrd6Hu7regmJN1NSiAja10gc4bX3F0wd+9rQmcuHQaHVQCYIEC8iFXnE+mavh23GOt7wBgug==
 
-netlify-cli@2.64.0:
-  version "2.64.0"
-  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-2.64.0.tgz#56ac36c761341504fdacab1207e8aaac40e8d60a"
-  integrity sha512-NyBz6kfBVSWF7zVYsQ9vR9RGeE2wgZxNpBK1GukV6tq3GjQ/SfQAyp18bJ4Z9DkC3tFFvfo8avZOGRZGPZuDdg==
+netlify-cli@2.64.1:
+  version "2.64.1"
+  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-2.64.1.tgz#fe9253f7098523d1be33b38ae20f7f0ab2ff5cfd"
+  integrity sha512-Lo1DX//zdGzbiRaDfcRd+RyjenNw7UvnZbFpSDiPUq+88BmTY2e9UinFCKoFmymG+o0+lYnRA+wynozknjFUQw==
   dependencies:
     "@netlify/build" "^4.0.1"
     "@netlify/config" "^2.0.9"
@@ -8868,7 +8868,7 @@ netlify-cli@2.64.0:
     make-dir "^3.0.0"
     minimist "^1.2.5"
     multiparty "^4.2.1"
-    netlify "^4.3.10"
+    netlify "^4.5.2"
     netlify-redirect-parser "^2.5.0"
     netlify-redirector "^0.2.0"
     node-fetch "^2.6.0"
@@ -8936,7 +8936,7 @@ netlify@^4.1.7:
     through2-filter "^3.0.0"
     through2-map "^3.0.0"
 
-netlify@^4.3.10, netlify@^4.3.11:
+netlify@^4.3.11:
   version "4.3.11"
   resolved "https://registry.yarnpkg.com/netlify/-/netlify-4.3.11.tgz#2917f457813d2ef8d73f098db77b074ac47356eb"
   integrity sha512-d29AhXEtwtj8l+tRhssvUqp91wgv/b4ERI/nD20X6/S2X5s98h0+ySf4A062Y/A6el4C79JqeJ+SFLo/vNZ/Eg==
@@ -8970,6 +8970,36 @@ netlify@^4.3.13:
   version "4.3.13"
   resolved "https://registry.yarnpkg.com/netlify/-/netlify-4.3.13.tgz#6b7013e9f9e2ade10e9a9418cf9a825fa8d1cdaa"
   integrity sha512-nXiqUm89HOEGOzYiLtxGOUCZ+iJB01zxCMeolaQXaIia6UnFCw/jHMARGXMLpntxkgjclaMgMVzKO3aetbHAvQ==
+  dependencies:
+    "@netlify/open-api" "^0.16.0"
+    "@netlify/zip-it-and-ship-it" "^1.3.12"
+    backoff "^2.5.0"
+    clean-deep "^3.3.0"
+    filter-obj "^2.0.1"
+    flush-write-stream "^2.0.0"
+    folder-walker "^3.2.0"
+    from2-array "0.0.4"
+    hasha "^5.0.0"
+    lodash.camelcase "^4.3.0"
+    lodash.flatten "^4.4.0"
+    lodash.get "^4.4.2"
+    lodash.set "^4.3.2"
+    micro-api-client "^3.3.0"
+    node-fetch "^2.2.0"
+    p-map "^3.0.0"
+    p-wait-for "^3.1.0"
+    parallel-transform "^1.1.0"
+    pump "^3.0.0"
+    qs "^6.9.3"
+    rimraf "^3.0.2"
+    tempy "^0.3.0"
+    through2-filter "^3.0.0"
+    through2-map "^3.0.0"
+
+netlify@^4.5.2:
+  version "4.5.2"
+  resolved "https://registry.yarnpkg.com/netlify/-/netlify-4.5.2.tgz#d3c1c2634f33b6138fb414e048a242f9ff9cdbfc"
+  integrity sha512-o6g67js91RBY2ZPGvgKC6jyEYxhLyofBMiiaKh4ALcRUnSXOnZEGZH1FZYZIB85omjO6PUaTdGIB9g+VkWRUaA==
   dependencies:
     "@netlify/open-api" "^0.16.0"
     "@netlify/zip-it-and-ship-it" "^1.3.12"
