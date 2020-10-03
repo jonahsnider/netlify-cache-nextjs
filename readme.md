@@ -57,7 +57,7 @@ yarn install
 
 ### Building
 
-Run the `build` script to compile the TypeScript into the `tsc_output` folder.
+Run the `build` script to compile and optimize the TypeScript code into the `dist` folder.
 
 ### Style
 
