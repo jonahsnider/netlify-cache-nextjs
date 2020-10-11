@@ -5812,7 +5812,7 @@ fs-constants@^1.0.0:
   resolved "https://registry.yarnpkg.com/fs-constants/-/fs-constants-1.0.0.tgz#6be0de9be998ce16af8afc24497b9ee9b7ccd9ad"
   integrity sha512-y6OAwoSIf7FyjMIv94u+b5rdheZEjzR63GTyZJm5qh4Bi+2YgwLCcI/fPFZkL5PSixOt6ZNKm+w+Hfp/Bciwow==
 
-fs-extra@8.1.0, fs-extra@^8.0.0, fs-extra@^8.1.0:
+fs-extra@8.1.0, fs-extra@^8.0.0:
   version "8.1.0"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-8.1.0.tgz#49d43c45a88cd9677668cb7be1b46efdb8d2e1c0"
   integrity sha512-yhlQgA6mnOJUKOsRUFsgJdQCvkKhcz8tlZG5HBQfReYZy46OwLcY+Zia0mtdHsOo9y/hP+CxMN0TU9QxoOtG4g==
@@ -9195,10 +9195,10 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   resolved "https://registry.yarnpkg.com/nested-error-stacks/-/nested-error-stacks-2.1.0.tgz#0fbdcf3e13fe4994781280524f8b96b0cdff9c61"
   integrity sha512-AO81vsIO1k1sM4Zrd6Hu7regmJN1NSiAja10gc4bX3F0wd+9rQmcuHQaHVQCYIEC8iFXnE+mavh23GOt7wBgug==
 
-netlify-cli@2.65.4:
-  version "2.65.4"
-  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-2.65.4.tgz#16486965a6187ab893f743ff990386fcf8f46036"
-  integrity sha512-Ybm7WNeBB0NyYspEdlUxt+GZ2uq0Zn4QSyvpQBDJvNCLDZEpyr04HJYbKI/QjUQJvjK4zFi9//l5+Fs4WlM9jw==
+netlify-cli@2.65.5:
+  version "2.65.5"
+  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-2.65.5.tgz#b9ba7bd3d6fbd6113d5d5d99ad3f9c01a4ce7624"
+  integrity sha512-tW0EPmMZfdZ26DFDNbHbpqjYmmGxw8tR8TBsVsI7EqQS+QsvcVBNzgQeQGKLBd53Tp4pDPg481dHknb0c/XL9Q==
   dependencies:
     "@netlify/build" "^5.0.0"
     "@netlify/config" "^2.0.9"
@@ -9228,6 +9228,7 @@ netlify-cli@2.65.4:
     cookie "^0.4.0"
     copy-template-dir "^1.4.0"
     debug "^4.1.1"
+    del "^5.1.0"
     dot-prop "^5.1.0"
     dotenv "^8.2.0"
     envinfo "^7.3.1"
@@ -9236,7 +9237,6 @@ netlify-cli@2.65.4:
     express-logging "^1.1.1"
     filter-obj "^2.0.1"
     find-up "^4.1.0"
-    fs-extra "^8.1.0"
     fuzzy "^0.1.3"
     get-port "^5.1.0"
     gh-release-fetch "^1.0.3"
