@@ -1216,10 +1216,10 @@
     uuid "^8.0.0"
     yargs "^15.3.1"
 
-"@netlify/cache-utils@1.0.5":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@netlify/cache-utils/-/cache-utils-1.0.5.tgz#b828b6f42923c9b4ea5d14a3da4b1e88c2fe2a38"
-  integrity sha512-6mryEPy4ZeLKyG5laoLbZLU78MGsa3gcXrpcYC7LxHc6rqZ6IyLmupuwxyHtAg/n+/XKzYDozKfFtpQPZ7vlrw==
+"@netlify/cache-utils@1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@netlify/cache-utils/-/cache-utils-1.0.6.tgz#e4794f315a24d04969b134a8f408c77ecce477d4"
+  integrity sha512-Pz/TzLZhMUACT+X7Un6jZCXgEUwLPVNbx69DQtEOMZ6hNBE1b1ErTHFbSaHA0KfDn/yqCII5vS274DERvNuRwg==
   dependencies:
     array-flat-polyfill "^1.0.1"
     cpy "^8.1.0"
