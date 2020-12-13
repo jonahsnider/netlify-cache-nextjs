@@ -1163,15 +1163,15 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@netlify/build@^6.0.0":
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@netlify/build/-/build-6.0.0.tgz#af6e20109b0f1e9a68238a784d2ef6d9ec27ccdb"
-  integrity sha512-1QuiZvxkE5W0xSunxynO+2KqA0Qy9AF25n6AM9A9gCHN43jMlsC5350wuqiJCwbYM/D0eC43z6Kt/+UiLArNhw==
+"@netlify/build@^7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@netlify/build/-/build-7.0.0.tgz#de58b32f831795a37727d33b52274c3a9901774e"
+  integrity sha512-C3xb4cOCx4ivyuPiSBcH7nXW3ZN02xHulpFKGA/hRlwoqIFDEFK/+n4tu9E1t6gzaCBjW/sukCbT/zjXXwDatw==
   dependencies:
     "@bugsnag/js" "^7.0.0"
     "@netlify/cache-utils" "^1.0.6"
-    "@netlify/config" "^2.4.1"
-    "@netlify/functions-utils" "^1.3.2"
+    "@netlify/config" "^2.4.2"
+    "@netlify/functions-utils" "^1.3.3"
     "@netlify/git-utils" "^1.0.6"
     "@netlify/plugin-edge-handlers" "^1.8.0"
     "@netlify/plugins-list" "^2.0.0"
@@ -1285,10 +1285,10 @@
     validate-npm-package-name "^3.0.0"
     yargs "^15.3.0"
 
-"@netlify/config@^2.4.1":
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/@netlify/config/-/config-2.4.1.tgz#eb9a35afc8f436828e2bbea4b0dfc54c7004e533"
-  integrity sha512-fSRSN3+c5kcyaCEd7XVlPRz820y/CRS8ryuE2fZAT/sgXiGBPGGKHwSKMNlso7s0qtJOmFyjeehU6nEzvfNKrg==
+"@netlify/config@^2.4.2":
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/@netlify/config/-/config-2.4.2.tgz#bd6ae4d72ece84955dab7939465318b45f87b284"
+  integrity sha512-EODBhSJHBpN4IhL68881uF0jutc5xkodgRP1mq3bPpNidLJjfcxltFSnT3TjtZmRxcCwFdl+XMqJzvcI3UKf4A==
   dependencies:
     array-flat-polyfill "^1.0.1"
     chalk "^3.0.0"
@@ -1301,7 +1301,7 @@
     indent-string "^4.0.0"
     is-plain-obj "^2.1.0"
     js-yaml "^3.14.0"
-    netlify "^4.5.1"
+    netlify "^5.0.0"
     omit.js "^2.0.2"
     p-locate "^4.1.0"
     path-exists "^4.0.0"
@@ -1311,10 +1311,10 @@
     validate-npm-package-name "^3.0.0"
     yargs "^15.3.0"
 
-"@netlify/functions-utils@^1.3.2":
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/@netlify/functions-utils/-/functions-utils-1.3.2.tgz#bd1b1c1b21145edd251b1e563917d279ffed3b3a"
-  integrity sha512-1/Jw1p4zxORIC8Nkglzf7bQEIjuALHFfi2e8tEqQfQUZ6pbBNy8bP3pcXZKpYc+fkrYKQaaqpKrfr+GjPHnT2Q==
+"@netlify/functions-utils@^1.3.3":
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/@netlify/functions-utils/-/functions-utils-1.3.3.tgz#1bd4c12211f922201e1e23a1a05a9614892d5108"
+  integrity sha512-cZhdSzyQkd6ZVUxL7mcOlLq2u2+JUzKfxmAjwMLwFAZKqc0YL8dWXP2C4Fe1I0g9u7fe6yAgDGigAkMnIgAYtw==
   dependencies:
     "@netlify/zip-it-and-ship-it" "^1.4.0"
     cpy "^8.1.0"
@@ -9504,12 +9504,12 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   resolved "https://registry.yarnpkg.com/nested-error-stacks/-/nested-error-stacks-2.1.0.tgz#0fbdcf3e13fe4994781280524f8b96b0cdff9c61"
   integrity sha512-AO81vsIO1k1sM4Zrd6Hu7regmJN1NSiAja10gc4bX3F0wd+9rQmcuHQaHVQCYIEC8iFXnE+mavh23GOt7wBgug==
 
-netlify-cli@2.69.6:
-  version "2.69.6"
-  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-2.69.6.tgz#3eeb108cb44c0644f4d99a16d61013b9bcd5ec45"
-  integrity sha512-oGv98SogJYT0EkPW/kt4Ealti5I/dSpPLwVt9Q58bsw3+Twcq5dCINdNbdxVgLb1eFd/gxvqc3jX3RN2nNm20A==
+netlify-cli@2.69.7:
+  version "2.69.7"
+  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-2.69.7.tgz#2688440b693f81e479b9b2d3156e39f7a45ac4b7"
+  integrity sha512-nkJsv8xdjKKSgXapsK3pZz4wfFXVflQFJwU7bJw0f3gYnWdpz6BQQJsy/tZ4xZnuxibCaVi1PP11utC5+s56gA==
   dependencies:
-    "@netlify/build" "^6.0.0"
+    "@netlify/build" "^7.0.0"
     "@netlify/config" "^2.0.9"
     "@netlify/plugin-edge-handlers" "^1.10.0"
     "@netlify/traffic-mesh-agent" "^0.27.0"
@@ -9682,10 +9682,10 @@ netlify@^4.3.11:
     through2-filter "^3.0.0"
     through2-map "^3.0.0"
 
-netlify@^4.5.1:
-  version "4.8.0"
-  resolved "https://registry.yarnpkg.com/netlify/-/netlify-4.8.0.tgz#39247061a68994459e67afba20a0fa5f37a0467e"
-  integrity sha512-6eaIvlTIwnh1zzFJ0RBMDAE6/GcZ3Y9JIR4cFNZdgINO+zRgWL/vNbjRs2hIerLpOS1eqt6Ye1P9RTqHEQNXUg==
+netlify@^5.0.0:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/netlify/-/netlify-5.0.2.tgz#11d6a4223c7f7b6c34f12eba7d1e0234e0c9d359"
+  integrity sha512-xAbxN/7D3l8vp0KT2FpVqSm72LAukRaJpM2liKylJl1La54s8uLgILL6eUUCKsWrEGTiI1o8w/ApqKrIQdeNOg==
   dependencies:
     "@netlify/open-api" "^0.18.0"
     "@netlify/zip-it-and-ship-it" "^1.3.12"
