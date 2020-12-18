@@ -25,7 +25,13 @@ If you want to manually install the plugin add the following lines to your `netl
 package = "netlify-plugin-cache-nextjs"
 ```
 
-And if you want to configure the plugin:
+Next, from your project's base directory, use yarn, npm, or any other Node.js package manager to add this plugin to devDependencies in `package.json`.
+
+```
+yarn add -D netlify-plugin-cache-nextjs
+```
+
+If you want to configure the plugin, you can do this in your `netlify.toml` file:
 
 ```toml
 [[plugins]]
