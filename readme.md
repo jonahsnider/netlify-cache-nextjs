@@ -27,7 +27,7 @@ package = "netlify-plugin-cache-nextjs"
 
 Next, from your project's base directory, use yarn, npm, or any other Node.js package manager to add this plugin to devDependencies in `package.json`.
 
-```
+```sh
 yarn add -D netlify-plugin-cache-nextjs
 ```
 
