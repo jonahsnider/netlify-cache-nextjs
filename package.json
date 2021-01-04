@@ -11,7 +11,7 @@
 		"@netlify/cache-utils": "1.0.6"
 	},
 	"devDependencies": {
-		"eslint-plugin-prettier": "3.3.0",
+		"eslint-plugin-prettier": "3.3.1",
 		"netlify-cli": "2.70.0",
 		"prettier": "2.2.1",
 		"prettier-config-xo": "1.0.3",
