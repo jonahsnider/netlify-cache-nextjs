@@ -1374,29 +1374,29 @@
   dependencies:
     execa "^3.4.0"
 
-"@netlify/traffic-mesh-agent-darwin-x64@^0.27.0":
-  version "0.27.0"
-  resolved "https://registry.yarnpkg.com/@netlify/traffic-mesh-agent-darwin-x64/-/traffic-mesh-agent-darwin-x64-0.27.0.tgz#6487ecd00b5ee87b370ac04c70234c0f6d9135de"
-  integrity sha512-a0EDNrdLBjxp+GYj/WQSifuQZorFQkY6spO4wuOl3mQV3tKTkBmu09+FsfitYpgZHDMoPzfhvURJrUtJIHTgqQ==
+"@netlify/traffic-mesh-agent-darwin-x64@^0.27.8":
+  version "0.27.8"
+  resolved "https://registry.yarnpkg.com/@netlify/traffic-mesh-agent-darwin-x64/-/traffic-mesh-agent-darwin-x64-0.27.8.tgz#df49a4634bc94dcea66b170de5545973690a7f01"
+  integrity sha512-y2AfFo/RDdnmSXFqsJD07iMjSiAkTyBSmUuailmVssPSO0Z6uiPvxvngFCz2e0qbiVarPu9japLkx630P/MmpQ==
 
-"@netlify/traffic-mesh-agent-linux-x64@^0.27.0":
-  version "0.27.0"
-  resolved "https://registry.yarnpkg.com/@netlify/traffic-mesh-agent-linux-x64/-/traffic-mesh-agent-linux-x64-0.27.0.tgz#e27d7cbfd962cc5857bd2e70f92598304030bb37"
-  integrity sha512-m7p/0eTXKILxCpTqQOmBkYdIjYKwSC2KZbPpDJ4sYfnMIF3qa9uMp8qrK9At/oGPckeiTq4Id775veldhwt2lw==
+"@netlify/traffic-mesh-agent-linux-x64@^0.27.8":
+  version "0.27.8"
+  resolved "https://registry.yarnpkg.com/@netlify/traffic-mesh-agent-linux-x64/-/traffic-mesh-agent-linux-x64-0.27.8.tgz#03aed466655215be62362d99bba3b12c8669996b"
+  integrity sha512-tT+2Urh3dgePC1SbGZl0f2G51ss7yU+6E+fF9B1CYow/eGnQ8Z9PUc1QC1tNE3+js2ApO/eOm90iHCYIqLtF4w==
 
-"@netlify/traffic-mesh-agent-win32-x64@^0.27.0":
-  version "0.27.0"
-  resolved "https://registry.yarnpkg.com/@netlify/traffic-mesh-agent-win32-x64/-/traffic-mesh-agent-win32-x64-0.27.0.tgz#4551dade147878256cf1a5b9327ba1f435eed97a"
-  integrity sha512-u6Beazs0KWRcEx9q2n417Sj7+WGrDTtDGmmKPTE6WexFt6uY1oiq3AR+ohCtu1lIIsmAfAYd8O5dSOnyAT8dFg==
+"@netlify/traffic-mesh-agent-win32-x64@^0.27.8":
+  version "0.27.8"
+  resolved "https://registry.yarnpkg.com/@netlify/traffic-mesh-agent-win32-x64/-/traffic-mesh-agent-win32-x64-0.27.8.tgz#75e165b604d0231a0c8f6ea58cd25c8c70c6e51d"
+  integrity sha512-c6W/uh+MiNGQNmVFfz6vQCbJxkOrR5Q4X8zd35mH1/+twmcMs8aRHHPr1aRw/LXb6uQzT8GRB7sV4lD5yBLqmA==
 
-"@netlify/traffic-mesh-agent@^0.27.0":
-  version "0.27.0"
-  resolved "https://registry.yarnpkg.com/@netlify/traffic-mesh-agent/-/traffic-mesh-agent-0.27.0.tgz#fd51cb0704c7e5f8db4e0eb26ab49ab5654ca554"
-  integrity sha512-a+jXM75Ir9PavNTzDRkZWQT7jHc02wWF8mRYXWbvku+VLqmmkA61RyhAgSeo5dMWSdMofSRkoifnW7leyv7Obw==
+"@netlify/traffic-mesh-agent@^0.27.8":
+  version "0.27.8"
+  resolved "https://registry.yarnpkg.com/@netlify/traffic-mesh-agent/-/traffic-mesh-agent-0.27.8.tgz#ca7cb08df06c7dc184a43e137034368cdb089f05"
+  integrity sha512-hO58FtU+DYlSf2r4BQlf4d0ZhjUHoKCUQdDbHRRfIUUxGNoT6gIdGcMNkvtj+AO35t+tyh/vBRlPn1z38BUfyw==
   optionalDependencies:
-    "@netlify/traffic-mesh-agent-darwin-x64" "^0.27.0"
-    "@netlify/traffic-mesh-agent-linux-x64" "^0.27.0"
-    "@netlify/traffic-mesh-agent-win32-x64" "^0.27.0"
+    "@netlify/traffic-mesh-agent-darwin-x64" "^0.27.8"
+    "@netlify/traffic-mesh-agent-linux-x64" "^0.27.8"
+    "@netlify/traffic-mesh-agent-win32-x64" "^0.27.8"
 
 "@netlify/zip-it-and-ship-it@^1.3.12":
   version "1.3.12"
@@ -9414,15 +9414,15 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   resolved "https://registry.yarnpkg.com/nested-error-stacks/-/nested-error-stacks-2.1.0.tgz#0fbdcf3e13fe4994781280524f8b96b0cdff9c61"
   integrity sha512-AO81vsIO1k1sM4Zrd6Hu7regmJN1NSiAja10gc4bX3F0wd+9rQmcuHQaHVQCYIEC8iFXnE+mavh23GOt7wBgug==
 
-netlify-cli@3.1.1:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-3.1.1.tgz#33f04b71c01ca73c7a8515bd758b4973afad41a7"
-  integrity sha512-pqY497KbADUrlMjs4QcDvHVm16IyW/bFccK++atEq+GL7Rhkqry33eAFAOhhSKiwl6KteG520Oh33iu6jAxX3A==
+netlify-cli@3.1.2:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-3.1.2.tgz#84ae14a39ef8c1105bf7bf84ad8569bc3b78e29a"
+  integrity sha512-8BGk1UvrMi3H1jJRrVhmWmWM3kapKSGC3SFG591LmlRu78a8SqIlKCiNX98HNjrg8KSUXhmxwSs+7U6+70dKPA==
   dependencies:
     "@netlify/build" "^8.0.5"
     "@netlify/config" "^3.0.1"
     "@netlify/plugin-edge-handlers" "^1.10.0"
-    "@netlify/traffic-mesh-agent" "^0.27.0"
+    "@netlify/traffic-mesh-agent" "^0.27.8"
     "@netlify/zip-it-and-ship-it" "^2.0.0"
     "@oclif/command" "^1.6.1"
     "@oclif/config" "^1.15.1"
