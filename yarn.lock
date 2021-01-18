@@ -9414,10 +9414,10 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   resolved "https://registry.yarnpkg.com/nested-error-stacks/-/nested-error-stacks-2.1.0.tgz#0fbdcf3e13fe4994781280524f8b96b0cdff9c61"
   integrity sha512-AO81vsIO1k1sM4Zrd6Hu7regmJN1NSiAja10gc4bX3F0wd+9rQmcuHQaHVQCYIEC8iFXnE+mavh23GOt7wBgug==
 
-netlify-cli@3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-3.2.1.tgz#aca53a71d803a2b8dc776d8d7f80b90de7d7f053"
-  integrity sha512-MRAtnC/3iaOsaQt35F85i2/oe6oLNGMavH4YmJXDpbNfQvsWbaYQM3qWaDZXBMkNXBAFqCTfj2YSJY/Lmqfwnw==
+netlify-cli@3.2.2:
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-3.2.2.tgz#62f9cb1ab0ff4ef02a690b84228a68e5e6e00783"
+  integrity sha512-msRafCI30yeKJJC3KikiHxzw59+G2tPJlH5iHpoam5zRCmiwz4xYIICtJZVHmP3BwJ2n9HG3mcmivn+uwLo3zw==
   dependencies:
     "@netlify/build" "^8.0.5"
     "@netlify/config" "^3.0.1"
@@ -9432,6 +9432,7 @@ netlify-cli@3.2.1:
     "@oclif/plugin-not-found" "^1.1.4"
     "@oclif/plugin-plugins" "^1.9.3"
     "@octokit/rest" "^16.28.1"
+    "@sindresorhus/slugify" "^1.1.0"
     "@ungap/from-entries" "^0.2.1"
     ansi-styles "^5.0.0"
     ascii-table "0.0.9"
