@@ -9421,10 +9421,10 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   resolved "https://registry.yarnpkg.com/nested-error-stacks/-/nested-error-stacks-2.1.0.tgz#0fbdcf3e13fe4994781280524f8b96b0cdff9c61"
   integrity sha512-AO81vsIO1k1sM4Zrd6Hu7regmJN1NSiAja10gc4bX3F0wd+9rQmcuHQaHVQCYIEC8iFXnE+mavh23GOt7wBgug==
 
-netlify-cli@3.2.4:
-  version "3.2.4"
-  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-3.2.4.tgz#f878e6f6b7d66e9b5edfc7adfaa7509b1c372375"
-  integrity sha512-DRWGdzRikIj9RoT3p9Q4J0fTGJ+lZZpeF78zydT6nZzscUYOl171clol6aXZxYNVmf//QrEgN2DYpvuiD+5BSQ==
+netlify-cli@3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-3.3.0.tgz#aa44acfb270534432c844aeb2a49f114b5a2c3c0"
+  integrity sha512-oe/R8QRcHhUOfHpdycTORAbbtsqFGDbH19oCUocQBFEBHvYwC8Xy13ZlPwtie1PnPaoyog/waKOc3wlUTxRrSA==
   dependencies:
     "@netlify/build" "^8.0.5"
     "@netlify/config" "^3.0.1"
@@ -9460,6 +9460,7 @@ netlify-cli@3.2.4:
     del "^5.1.0"
     dot-prop "^5.1.0"
     dotenv "^8.2.0"
+    env-paths "^2.2.0"
     envinfo "^7.3.1"
     execa "^5.0.0"
     express "^4.17.1"
@@ -9484,6 +9485,7 @@ netlify-cli@3.2.4:
     lodash "^4.17.20"
     log-symbols "^3.0.0"
     make-dir "^3.0.0"
+    memoize-one "^5.1.1"
     minimist "^1.2.5"
     multiparty "^4.2.1"
     netlify "^6.0.0"
