@@ -8,7 +8,7 @@
 		"url": "https://github.com/pizzafox/netlify-cache-nextjs/issues"
 	},
 	"dependencies": {
-		"@netlify/cache-utils": "1.0.6"
+		"@netlify/cache-utils": "1.0.7"
 	},
 	"devDependencies": {
 		"eslint-plugin-prettier": "3.3.1",
