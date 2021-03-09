@@ -1163,10 +1163,10 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@netlify/build@^9.8.3":
-  version "9.8.3"
-  resolved "https://registry.yarnpkg.com/@netlify/build/-/build-9.8.3.tgz#64970ec60daa19c644b69b7c1ae312fe346dad8c"
-  integrity sha512-NkYHVjT/NqJWUHvbVVZJvhAQ1FrsAgFIbds2GAkW+of8K6ixgMWR6RKoD8QyOfvXIt/B/28QS/w4viBsR74Hdw==
+"@netlify/build@^9.9.0":
+  version "9.9.0"
+  resolved "https://registry.yarnpkg.com/@netlify/build/-/build-9.9.0.tgz#11f8209e2b9311d6d482731207f5567e095d435e"
+  integrity sha512-IWppG9lCDOTLOV/oHXmq9yeqgU37VtEHvhvIl8+SyMYto8vWRigPxmDO/8hPNHF/xlxhEqUqxdbApWNRRuopkg==
   dependencies:
     "@bugsnag/js" "^7.0.0"
     "@netlify/cache-utils" "^1.0.7"
@@ -1174,7 +1174,7 @@
     "@netlify/functions-utils" "^1.3.13"
     "@netlify/git-utils" "^1.0.8"
     "@netlify/plugin-edge-handlers" "^1.11.5"
-    "@netlify/plugins-list" "^2.3.0"
+    "@netlify/plugins-list" "^2.4.0"
     "@netlify/run-utils" "^1.0.6"
     "@netlify/zip-it-and-ship-it" "^2.5.0"
     "@sindresorhus/slugify" "^1.1.0"
@@ -1188,7 +1188,6 @@
     global-cache-dir "^1.0.1"
     got "^9.6.0"
     indent-string "^4.0.0"
-    is-ci "^3.0.0"
     is-plain-obj "^2.1.0"
     js-yaml "^4.0.0"
     keep-func-props "^3.0.0"
@@ -1263,10 +1262,10 @@
     validate-npm-package-name "^3.0.0"
     yargs "^15.3.0"
 
-"@netlify/config@^4.0.4":
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/@netlify/config/-/config-4.0.4.tgz#374e16170f9b7df1dc5387e0c4e9277023f9861a"
-  integrity sha512-e/F9faSp79QGgb3k4nLae8FSXGdmtIndlGthocrrYvLb0mLEvJke+veqKH4u825oOcOvQZaYw5UnOyLRu8hcXQ==
+"@netlify/config@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@netlify/config/-/config-4.1.0.tgz#6018958b95db5cfd93b0c5f116d0118f6ae2bb96"
+  integrity sha512-6pEjPAgbz0MljlHnn48SSuEbC2wzw3SvAn4IFPMiHO7sXZRgjGaHAeKpLcMiQb4CGOgljyBdS2IJW0UHowRS1A==
   dependencies:
     "@ungap/from-entries" "^0.2.1"
     array-flat-polyfill "^1.0.1"
@@ -1359,10 +1358,10 @@
     rollup-plugin-terser "^7.0.2"
     typescript "^4.1.5"
 
-"@netlify/plugins-list@^2.3.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@netlify/plugins-list/-/plugins-list-2.3.0.tgz#d232f4f93c3eb2dc1123691a1aefadb9493ad93e"
-  integrity sha512-nJ32g9A0CuEnOubdwYaN1SoHwAxZ+sphOyOVDMoMf6KB0cDcX0oJt/nYSHMftu+5JGiHNu4lD6sMndGuCfXsxw==
+"@netlify/plugins-list@^2.4.0":
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/@netlify/plugins-list/-/plugins-list-2.4.0.tgz#96d10d1bd15257ab87e887cb54422dd37c3f8921"
+  integrity sha512-006JT4L3G36rzGkFnpHr/GOVaEfapSNAfWfsfS16tcPwjwz9fGSndfODeou7x4IU5IrHgEOJ6xQQKKqNjbfj4g==
 
 "@netlify/run-utils@^1.0.6":
   version "1.0.6"
@@ -3466,7 +3465,7 @@ ci-info@^2.0.0:
   resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-2.0.0.tgz#67a9e964be31a51e15e5010d58e6f12834002f46"
   integrity sha512-5tK7EtrZ0N+OLFMthtqOj4fI2Jeb88C4CAZPu25LDVUgXJ0A3Js4PMGqrn0JU1W0Mh1/Z8wZzYPxqUrXeBboCQ==
 
-ci-info@^3.1.1:
+ci-info@^3.0.0:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-3.1.1.tgz#9a32fcefdf7bcdb6f0a7e1c0f8098ec57897b80a"
   integrity sha512-kdRWLBIJwdsYJWYJFtAFFYxybguqeF91qpZaggjG5Nf8QKdizFG2hjqvaTXbxFIcYbSaD74KpAXv6BSm17DHEQ==
@@ -7082,13 +7081,6 @@ is-ci@^2.0.0:
   dependencies:
     ci-info "^2.0.0"
 
-is-ci@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/is-ci/-/is-ci-3.0.0.tgz#c7e7be3c9d8eef7d0fa144390bd1e4b88dc4c994"
-  integrity sha512-kDXyttuLeslKAHYL/K28F2YkM3x5jvFPEw3yXbRptXydjD9rpLEz+C5K5iutY9ZiUu6AP41JdvRQwF4Iqs4ZCQ==
-  dependencies:
-    ci-info "^3.1.1"
-
 is-cidr@^3.0.0:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/is-cidr/-/is-cidr-3.1.1.tgz#e92ef121bdec2782271a77ce487a8b8df3718ab7"
@@ -9314,13 +9306,13 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   resolved "https://registry.yarnpkg.com/nested-error-stacks/-/nested-error-stacks-2.1.0.tgz#0fbdcf3e13fe4994781280524f8b96b0cdff9c61"
   integrity sha512-AO81vsIO1k1sM4Zrd6Hu7regmJN1NSiAja10gc4bX3F0wd+9rQmcuHQaHVQCYIEC8iFXnE+mavh23GOt7wBgug==
 
-netlify-cli@3.10.6:
-  version "3.10.6"
-  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-3.10.6.tgz#47385ee59629bd5593b742610708c91b37f3075f"
-  integrity sha512-z/TQ+ehXvNhYQkJXNwxOSYq1jFP3rt1yvD2pILnbCrRZavzYc+GoIEKhKj+gPRgezwzXN9LnGiNQES4zyNcJJA==
+netlify-cli@3.10.7:
+  version "3.10.7"
+  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-3.10.7.tgz#c2c8c688302d06f178677a672574427e9fb28004"
+  integrity sha512-IbBL9qSP3lNEQ90f4OvQAcPImfv4T5PwMirVKe3wl5FUTHwqEr7RXK2ngem0srzEuo5dyKrgUQRzUT08LPZ+XQ==
   dependencies:
-    "@netlify/build" "^9.8.3"
-    "@netlify/config" "^4.0.4"
+    "@netlify/build" "^9.9.0"
+    "@netlify/config" "^4.1.0"
     "@netlify/framework-info" "^2.3.0"
     "@netlify/plugin-edge-handlers" "^1.11.5"
     "@netlify/traffic-mesh-agent" "^0.27.10"
@@ -9341,7 +9333,7 @@ netlify-cli@3.10.6:
     boxen "^4.1.0"
     chalk "^2.4.2"
     chokidar "^3.0.2"
-    ci-info "^2.0.0"
+    ci-info "^3.0.0"
     clean-deep "^3.0.2"
     cli-spinners "^2.0.0"
     cli-ux "^5.5.1"
@@ -9385,7 +9377,7 @@ netlify-cli@3.10.6:
     minimist "^1.2.5"
     multiparty "^4.2.1"
     netlify "^6.1.13"
-    netlify-redirect-parser "^3.0.4"
+    netlify-redirect-parser "^3.0.5"
     netlify-redirector "^0.2.1"
     node-fetch "^2.6.0"
     open "^7.0.0"
@@ -9428,12 +9420,12 @@ netlify-plugin-deploy-preview-commenting@^0.0.1-alpha.16:
     unified "^9.2.0"
     unist-util-visit "^2.0.3"
 
-netlify-redirect-parser@^3.0.4:
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/netlify-redirect-parser/-/netlify-redirect-parser-3.0.4.tgz#4c4e2191bf5f2107788e7c2393ab9250fa1de12d"
-  integrity sha512-l5OJ3EBh9twiBbsHdAmufoAnkS5FRDbY67p3Q0ukDD94ZSC2esXiN3kZd5lMuHqcpOBJlmjrG/xSCWBjVTbe/g==
+netlify-redirect-parser@^3.0.5:
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/netlify-redirect-parser/-/netlify-redirect-parser-3.0.5.tgz#d83bd4bf5fafe3f77505e024ce60136bb0b25a1d"
+  integrity sha512-WiKepNjcTSGnt6E69PdgqMdHF/spTRI4Kcjz3clN+Fgl7goiaFpGQCEuE/bc9Hoh+OK1dkLVOM0OnPQgq5tKRQ==
   dependencies:
-    "@netlify/config" "^4.0.4"
+    "@netlify/config" "^4.1.0"
     lodash.isplainobject "^4.0.6"
 
 netlify-redirector@^0.2.1:
