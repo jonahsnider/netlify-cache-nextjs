@@ -1317,7 +1317,7 @@
     validate-npm-package-name "^3.0.0"
     yargs "^15.3.0"
 
-"@netlify/framework-info@^3.1.3":
+"@netlify/framework-info@^3.2.0":
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/@netlify/framework-info/-/framework-info-3.2.0.tgz#602fb79077a3eae37991902323997811871479c7"
   integrity sha512-wvyTzcRMtg4Qlzn8rAjx+k4UD42TLbZdpF7dNqnL4+cBPeS04X0tc7Jhan7aigwnmiKUw6nufhkN40TInpiC6g==
@@ -9516,14 +9516,14 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   resolved "https://registry.yarnpkg.com/nested-error-stacks/-/nested-error-stacks-2.1.0.tgz#0fbdcf3e13fe4994781280524f8b96b0cdff9c61"
   integrity sha512-AO81vsIO1k1sM4Zrd6Hu7regmJN1NSiAja10gc4bX3F0wd+9rQmcuHQaHVQCYIEC8iFXnE+mavh23GOt7wBgug==
 
-netlify-cli@3.12.0:
-  version "3.12.0"
-  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-3.12.0.tgz#844d6c20426284afda8eae0d03e3c16d2508f048"
-  integrity sha512-T84GSTuxIKSMlTbDx5fSlP83zJYhUfT+wCH1QGAB7LNfYiWUFfjrV1z6TWYD7G76CU+2svn8MVaFh98W4vYkPw==
+netlify-cli@3.13.0:
+  version "3.13.0"
+  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-3.13.0.tgz#192426f24587101aaa322cf9c13f50cabb422cf0"
+  integrity sha512-kH1Ft32MAYXzVcZLIEWFVjoCanShVmBa2WcvFqJ0ee9gZRnJBWwbj0SIlcfj1RCmjkvKDpEAWvJLEcxun2FMbw==
   dependencies:
     "@netlify/build" "^9.9.7"
     "@netlify/config" "^4.1.3"
-    "@netlify/framework-info" "^3.1.3"
+    "@netlify/framework-info" "^3.2.0"
     "@netlify/plugin-edge-handlers" "^1.11.5"
     "@netlify/plugins-list" "^2.4.1"
     "@netlify/traffic-mesh-agent" "^0.27.10"
