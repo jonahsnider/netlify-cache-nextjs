@@ -1163,10 +1163,10 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@netlify/build@^9.9.7":
-  version "9.9.7"
-  resolved "https://registry.yarnpkg.com/@netlify/build/-/build-9.9.7.tgz#0410d5525fe3c0f196a21228d266a3c7644f15ae"
-  integrity sha512-IEh3GdretsA1P0sZG42CbpcFsguM3rrv76f15R4uYsPGtUBF/ETR/+lIww6am2uuKEur7DilJrY/FYJPjxOqPA==
+"@netlify/build@^9.10.1":
+  version "9.10.1"
+  resolved "https://registry.yarnpkg.com/@netlify/build/-/build-9.10.1.tgz#e4a2818ace7577d145f5a6d0dab126bb199ecaee"
+  integrity sha512-3JGUyWpostOThjUySstPxibPY0QPolAY6YiCM1oQ9k31Ufe+NdTTUUJoEARa/g5FHGDPwcvQLfZGe/BDRTXfVw==
   dependencies:
     "@bugsnag/js" "^7.0.0"
     "@netlify/cache-utils" "^1.0.7"
@@ -1174,7 +1174,7 @@
     "@netlify/functions-utils" "^1.3.13"
     "@netlify/git-utils" "^1.0.8"
     "@netlify/plugin-edge-handlers" "^1.11.5"
-    "@netlify/plugins-list" "^2.4.1"
+    "@netlify/plugins-list" "^2.4.2"
     "@netlify/run-utils" "^1.0.6"
     "@netlify/zip-it-and-ship-it" "^2.7.1"
     "@sindresorhus/slugify" "^1.1.0"
@@ -1386,10 +1386,10 @@
     rollup-plugin-terser "^7.0.2"
     typescript "^4.1.5"
 
-"@netlify/plugins-list@^2.4.1":
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/@netlify/plugins-list/-/plugins-list-2.4.1.tgz#364425ebe0612417cd17a30d5c6c677fe5472596"
-  integrity sha512-UtBdYK1LodrnOEuLmDWxBblDPQwlQADFNfKzgkmPaAQ6rGQmKpu5UqAr+u0HAJa2cjm5Pr1Zfs1dBhj0bWnmxw==
+"@netlify/plugins-list@^2.4.2":
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/@netlify/plugins-list/-/plugins-list-2.4.2.tgz#88d59bbe38e7130d7b658c090812953b676012b3"
+  integrity sha512-+RgPw02d775gSd0m3L6D2EgnwZupxNzaB0c3necG3RrRHSgfbUjNBww5xxbFUkorTsCJBxg3NF75N6rPO/vYNQ==
 
 "@netlify/run-utils@^1.0.6":
   version "1.0.6"
@@ -9516,16 +9516,16 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   resolved "https://registry.yarnpkg.com/nested-error-stacks/-/nested-error-stacks-2.1.0.tgz#0fbdcf3e13fe4994781280524f8b96b0cdff9c61"
   integrity sha512-AO81vsIO1k1sM4Zrd6Hu7regmJN1NSiAja10gc4bX3F0wd+9rQmcuHQaHVQCYIEC8iFXnE+mavh23GOt7wBgug==
 
-netlify-cli@3.13.0:
-  version "3.13.0"
-  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-3.13.0.tgz#192426f24587101aaa322cf9c13f50cabb422cf0"
-  integrity sha512-kH1Ft32MAYXzVcZLIEWFVjoCanShVmBa2WcvFqJ0ee9gZRnJBWwbj0SIlcfj1RCmjkvKDpEAWvJLEcxun2FMbw==
+netlify-cli@3.13.1:
+  version "3.13.1"
+  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-3.13.1.tgz#bd56901a2b5d4d1195d88630196c1d82371d375b"
+  integrity sha512-g7ubCROpn1qPfUv5cXVO0R43i8lW1NA9JMguJt2Fg6axBHHWhgG/KtRb7NAogx0ppDVrJCS5YlXjNuuiNiIA2A==
   dependencies:
-    "@netlify/build" "^9.9.7"
+    "@netlify/build" "^9.10.1"
     "@netlify/config" "^4.1.3"
     "@netlify/framework-info" "^3.2.0"
     "@netlify/plugin-edge-handlers" "^1.11.5"
-    "@netlify/plugins-list" "^2.4.1"
+    "@netlify/plugins-list" "^2.4.2"
     "@netlify/traffic-mesh-agent" "^0.27.10"
     "@netlify/zip-it-and-ship-it" "^2.7.1"
     "@oclif/command" "^1.6.1"
