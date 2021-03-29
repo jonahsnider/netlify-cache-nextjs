@@ -1163,10 +1163,10 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@netlify/build@^9.11.4":
-  version "9.11.4"
-  resolved "https://registry.yarnpkg.com/@netlify/build/-/build-9.11.4.tgz#59112f0af194263dccb12047b05892880747f6e5"
-  integrity sha512-Sp29Nh//rNq7mqiTjpFQyfM7Xo/aO6IibYjZMsTX/Jsc4oPDKpFjOa0QJj5zNlQAwX6M0vsQTD/De87s4qvjZw==
+"@netlify/build@^9.17.1":
+  version "9.17.1"
+  resolved "https://registry.yarnpkg.com/@netlify/build/-/build-9.17.1.tgz#b4686bf4785a1dda3ecba8ba7d74fa5c73686db7"
+  integrity sha512-rGnYD7o7phT06NyBRAa3Sle5P0CdqA5i6zo7gM9YtIiMUwYTZ7Ec6B/ncU6+V14GusVZiwUXZXPM6Ns+J0WCbA==
   dependencies:
     "@bugsnag/js" "^7.0.0"
     "@netlify/cache-utils" "^1.0.7"
@@ -1174,7 +1174,7 @@
     "@netlify/functions-utils" "^1.3.13"
     "@netlify/git-utils" "^1.0.8"
     "@netlify/plugin-edge-handlers" "^1.11.6"
-    "@netlify/plugins-list" "^2.4.3"
+    "@netlify/plugins-list" "^2.5.0"
     "@netlify/run-utils" "^1.0.6"
     "@netlify/zip-it-and-ship-it" "^3.0.1"
     "@sindresorhus/slugify" "^1.1.0"
@@ -1290,6 +1290,33 @@
     validate-npm-package-name "^3.0.0"
     yargs "^15.3.0"
 
+"@netlify/config@^4.3.0":
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/@netlify/config/-/config-4.3.0.tgz#ac727343d7c3ddbfac5b974d51a12a0d2a336e04"
+  integrity sha512-jS6u5Dm3asg8zF6cYNYWfvyH3+XB3dMMm0UpC/BOLrYuXKVjP6uiIoUoUI6IjIN7gxAcotTN6RKCA5jU2Ahy5w==
+  dependencies:
+    "@ungap/from-entries" "^0.2.1"
+    array-flat-polyfill "^1.0.1"
+    chalk "^3.0.0"
+    deepmerge "^4.2.2"
+    execa "^3.4.0"
+    fast-safe-stringify "^2.0.7"
+    figures "^3.2.0"
+    filter-obj "^2.0.1"
+    find-up "^4.1.0"
+    indent-string "^4.0.0"
+    is-plain-obj "^2.1.0"
+    js-yaml "^4.0.0"
+    netlify "^6.1.16"
+    omit.js "^2.0.2"
+    p-locate "^4.1.0"
+    path-exists "^4.0.0"
+    path-type "^4.0.0"
+    toml "^3.0.0"
+    tomlify-j0.4 "^3.0.0"
+    validate-npm-package-name "^3.0.0"
+    yargs "^15.3.0"
+
 "@netlify/framework-info@^3.2.0":
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/@netlify/framework-info/-/framework-info-3.2.0.tgz#602fb79077a3eae37991902323997811871479c7"
@@ -1354,10 +1381,10 @@
     rollup-plugin-terser "^7.0.2"
     typescript "^4.1.5"
 
-"@netlify/plugins-list@^2.4.3":
-  version "2.4.3"
-  resolved "https://registry.yarnpkg.com/@netlify/plugins-list/-/plugins-list-2.4.3.tgz#169d76c4f5854a3332d919ee93b6ab96396c2571"
-  integrity sha512-xJ4o8IRwjjWrsFw/Ii4VSWQgmoBe/GFyWTj1q+ShOpC0BJUTZ22g7+rMwlEZXkisOT+Y/niPkikkrXcU9FCzZg==
+"@netlify/plugins-list@^2.5.0":
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/@netlify/plugins-list/-/plugins-list-2.5.0.tgz#a39c3129a805f6565701b21da7cffa1476498fd5"
+  integrity sha512-45BG3E6A+540BZDG4Dul5KmoOwzw+TwiwqQSP08bKiywWtyl3IDDFoozZRp+GjhRo1+CnNVN0L9FxdxvU82UDw==
 
 "@netlify/run-utils@^1.0.6":
   version "1.0.6"
@@ -9458,16 +9485,16 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   resolved "https://registry.yarnpkg.com/nested-error-stacks/-/nested-error-stacks-2.1.0.tgz#0fbdcf3e13fe4994781280524f8b96b0cdff9c61"
   integrity sha512-AO81vsIO1k1sM4Zrd6Hu7regmJN1NSiAja10gc4bX3F0wd+9rQmcuHQaHVQCYIEC8iFXnE+mavh23GOt7wBgug==
 
-netlify-cli@3.13.7:
-  version "3.13.7"
-  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-3.13.7.tgz#968f3d53be21d15a2ee74054226f661cffb0e163"
-  integrity sha512-I5aY4yOi3R5yNzhMy3RK9LG42jD422Eni/iiwv7+As9EpkYYcWXFwPLy7mE1bxE9xtyxkE1zKxKqEqDjLqt2kA==
+netlify-cli@3.13.8:
+  version "3.13.8"
+  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-3.13.8.tgz#3db8085b7c474e58325d47b82af1d22cd6731c45"
+  integrity sha512-gL/+FjnsKCrIVmE25Ivh5rkbupIfJGugNn5A9tdvk/tnOqd3ZqmJGB8XL5ue37pukkCO1AhUlEn+mA/8c5fBUQ==
   dependencies:
-    "@netlify/build" "^9.11.4"
-    "@netlify/config" "^4.2.0"
+    "@netlify/build" "^9.17.1"
+    "@netlify/config" "^4.3.0"
     "@netlify/framework-info" "^3.2.0"
     "@netlify/plugin-edge-handlers" "^1.11.6"
-    "@netlify/plugins-list" "^2.4.3"
+    "@netlify/plugins-list" "^2.5.0"
     "@netlify/traffic-mesh-agent" "^0.27.10"
     "@netlify/zip-it-and-ship-it" "^3.0.1"
     "@oclif/command" "^1.6.1"
