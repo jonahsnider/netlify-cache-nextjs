@@ -5,7 +5,7 @@ Cache the Next.js build folder in Netlify builds.
 [![add to netlify](https://img.shields.io/badge/add%20to-netlify-00AD9F)](https://app.netlify.com/plugins/netlify-plugin-cache-nextjs/install)
 [![npm](https://img.shields.io/npm/v/netlify-plugin-cache-nextjs)](https://www.npmjs.com/package/netlify-plugin-cache-nextjs)
 [![downloads per week](https://img.shields.io/npm/dw/netlify-plugin-cache-nextjs)](https://www.npmjs.com/package/netlify-plugin-cache-nextjs)
-[![Build Status](https://github.com/pizzafox/netlify-cache-nextjs/workflows/CI/badge.svg)](https://github.com/pizzafox/netlify-cache-nextjs/actions)
+[![Build Status](https://github.com/jonahsnider/netlify-cache-nextjs/workflows/CI/badge.svg)](https://github.com/jonahsnider/netlify-cache-nextjs/actions)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
 
 A [popular](https://www.netlify.com/blog/2020/06/22/top-10-netlify-build-plugins/#4-next-js-cache) [Netlify build plugin](https://docs.netlify.com/configure-builds/build-plugins/).

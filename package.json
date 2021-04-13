@@ -5,7 +5,7 @@
 		"url": "https://jonah.pw"
 	},
 	"bugs": {
-		"url": "https://github.com/pizzafox/netlify-cache-nextjs/issues"
+		"url": "https://github.com/jonahsnider/netlify-cache-nextjs/issues"
 	},
 	"dependencies": {
 		"@netlify/cache-utils": "1.0.7"
@@ -40,7 +40,7 @@
 	"name": "netlify-plugin-cache-nextjs",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/pizzafox/netlify-cache-nextjs.git"
+		"url": "git+https://github.com/jonahsnider/netlify-cache-nextjs.git"
 	},
 	"scripts": {
 		"build": "tsdx build",
