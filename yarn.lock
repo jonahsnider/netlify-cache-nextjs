@@ -1163,10 +1163,10 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@netlify/build@^10.2.7":
-  version "10.2.7"
-  resolved "https://registry.yarnpkg.com/@netlify/build/-/build-10.2.7.tgz#8467aded875b8899b178ba5503dd915d429aa05d"
-  integrity sha512-RdyIKPLYci5r/JeTdtqrZxnWQeEMVjQ0YVqbwxdZDXOUP9j4TCG3wrqJDfYScKkD+FcKJ0CLYihV906BWGJc0g==
+"@netlify/build@^10.3.0":
+  version "10.3.0"
+  resolved "https://registry.yarnpkg.com/@netlify/build/-/build-10.3.0.tgz#15603a576acca3c4bcad38b1ad37286a73bfac0e"
+  integrity sha512-d2BdT1txUO1rKCCb92EZPl7PM+fu17s4nVzybR/4R/p3pwLVtEOBTcSiWhnnHF1zowhQ2kDLFzV+JEyQlQoujA==
   dependencies:
     "@bugsnag/js" "^7.0.0"
     "@netlify/cache-utils" "^1.0.7"
@@ -1176,7 +1176,7 @@
     "@netlify/plugin-edge-handlers" "^1.11.6"
     "@netlify/plugins-list" "^2.6.0"
     "@netlify/run-utils" "^1.0.6"
-    "@netlify/zip-it-and-ship-it" "^3.2.0"
+    "@netlify/zip-it-and-ship-it" "^3.3.0"
     "@sindresorhus/slugify" "^1.1.0"
     "@ungap/from-entries" "^0.2.1"
     ansi-escapes "^4.3.2"
@@ -1476,10 +1476,10 @@
     unixify "^1.0.0"
     yargs "^15.4.1"
 
-"@netlify/zip-it-and-ship-it@^3.2.1":
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/@netlify/zip-it-and-ship-it/-/zip-it-and-ship-it-3.2.1.tgz#05e73e58f53218307faf9ad1ed3ee22718129c47"
-  integrity sha512-0onx8AUjPWTybwphux8YNCLYg6c471XqfnT/a2kd1IKMBI2cdnGyGOt3xpEQmPoxz0qBG2aU62BAaFzMPYh89w==
+"@netlify/zip-it-and-ship-it@^3.3.0":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@netlify/zip-it-and-ship-it/-/zip-it-and-ship-it-3.3.0.tgz#9710f67cb5b074d0f1b82aacbd305241c7c0d8b3"
+  integrity sha512-F2PIw+t3/mhBuZGgNCTcXGvL/+MI4wZ/ch6s28YPkcfOYikvWdwN5CXRyw1RBSmPA6oVj5Xs5mSuG7YmyJ3K7Q==
   dependencies:
     archiver "^4.0.0"
     array-flat-polyfill "^1.0.1"
@@ -1501,6 +1501,7 @@
     path-exists "^4.0.0"
     pkg-dir "^4.2.0"
     precinct "^6.3.1"
+    read-package-json-fast "^2.0.2"
     require-package-name "^2.0.1"
     resolve "^2.0.0-next.1"
     semver "^6.3.0"
@@ -8069,6 +8070,11 @@ json-parse-better-errors@^1.0.0, json-parse-better-errors@^1.0.1, json-parse-bet
   resolved "https://registry.yarnpkg.com/json-parse-better-errors/-/json-parse-better-errors-1.0.2.tgz#bb867cfb3450e69107c131d1c514bab3dc8bcaa9"
   integrity sha512-mrqyZKfX5EhL7hvqcV6WG1yYjnjeuYDzDhhcAAUrq8Po85NBQBJP+ZDUT75qZQ98IkUoBqdkExkukOU7Ts2wrw==
 
+json-parse-even-better-errors@^2.3.0:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/json-parse-even-better-errors/-/json-parse-even-better-errors-2.3.1.tgz#7c47805a94319928e05777405dc12e1f7a4ee02d"
+  integrity sha512-xyFwyhro/JEof6Ghe2iz2NcXoj2sloNsWr/XsERDK/oiPCfaNhl5ONfp+jQdAZRQQ0IJWNzH9zIZF7li91kh2w==
+
 json-schema-traverse@^0.4.1:
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/json-schema-traverse/-/json-schema-traverse-0.4.1.tgz#69f6a87d9513ab8bb8fe63bdb0979c448e684660"
@@ -9369,18 +9375,18 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   resolved "https://registry.yarnpkg.com/nested-error-stacks/-/nested-error-stacks-2.1.0.tgz#0fbdcf3e13fe4994781280524f8b96b0cdff9c61"
   integrity sha512-AO81vsIO1k1sM4Zrd6Hu7regmJN1NSiAja10gc4bX3F0wd+9rQmcuHQaHVQCYIEC8iFXnE+mavh23GOt7wBgug==
 
-netlify-cli@3.17.2:
-  version "3.17.2"
-  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-3.17.2.tgz#ede63c4c4301847ee5705e88a0f96caac2a4ba21"
-  integrity sha512-PhSxSj/VvDEBSWwWSGY9xpDtxJjTUej8Ak1MZJFpRevtH/v4/RbuhUeapTTidDWO5bbzG+hyes0sa7R6oQySEg==
+netlify-cli@3.17.3:
+  version "3.17.3"
+  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-3.17.3.tgz#12ceb4bc514f655980afff67421595a0601bb859"
+  integrity sha512-/rz/nzdQNghuJ2qcPuMSpCxWFq1GtpUjVd43iAMTuYImhGSY6Hwi40zFU22SgecHEJaLGJDp+c1kDc9Cyd9X9g==
   dependencies:
-    "@netlify/build" "^10.2.7"
+    "@netlify/build" "^10.3.0"
     "@netlify/config" "^5.12.0"
     "@netlify/framework-info" "^3.3.0"
     "@netlify/plugin-edge-handlers" "^1.11.6"
     "@netlify/plugins-list" "^2.6.0"
     "@netlify/traffic-mesh-agent" "^0.27.10"
-    "@netlify/zip-it-and-ship-it" "^3.2.1"
+    "@netlify/zip-it-and-ship-it" "^3.3.0"
     "@oclif/command" "^1.6.1"
     "@oclif/config" "^1.15.1"
     "@oclif/errors" "^1.3.4"
@@ -9440,7 +9446,7 @@ netlify-cli@3.17.2:
     memoize-one "^5.1.1"
     minimist "^1.2.5"
     multiparty "^4.2.1"
-    netlify "^6.1.17"
+    netlify "^6.1.18"
     netlify-redirect-parser "^3.0.14"
     netlify-redirector "^0.2.1"
     node-fetch "^2.6.0"
@@ -9519,6 +9525,33 @@ netlify@^6.1.17:
   dependencies:
     "@netlify/open-api" "^1.3.0"
     "@netlify/zip-it-and-ship-it" "^3.2.0"
+    backoff "^2.5.0"
+    clean-deep "^3.4.0"
+    flush-write-stream "^2.0.0"
+    folder-walker "^3.2.0"
+    from2-array "0.0.4"
+    hasha "^5.2.2"
+    lodash.camelcase "^4.3.0"
+    micro-api-client "^3.3.0"
+    node-fetch "^2.6.1"
+    omit.js "^2.0.2"
+    p-map "^3.0.0"
+    p-wait-for "^3.2.0"
+    parallel-transform "^1.2.0"
+    pump "^3.0.0"
+    qs "^6.9.6"
+    rimraf "^3.0.2"
+    tempy "^0.3.0"
+    through2-filter "^3.0.0"
+    through2-map "^3.0.0"
+
+netlify@^6.1.18:
+  version "6.1.18"
+  resolved "https://registry.yarnpkg.com/netlify/-/netlify-6.1.18.tgz#27dc48486175ed8005a7d1b20d5c0c5f4d775c0a"
+  integrity sha512-hVOf6l67ldiVfJPsMp4Ztunvv81hbGr5RGw2WUlR6b7Hp1bM1oaydEx/MrsLtVVDwy2KEYxkwcMY3m7CiHnh5g==
+  dependencies:
+    "@netlify/open-api" "^1.3.0"
+    "@netlify/zip-it-and-ship-it" "^3.3.0"
     backoff "^2.5.0"
     clean-deep "^3.4.0"
     flush-write-stream "^2.0.0"
@@ -11118,6 +11151,14 @@ read-installed@~4.0.3:
     util-extend "^1.0.1"
   optionalDependencies:
     graceful-fs "^4.1.2"
+
+read-package-json-fast@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/read-package-json-fast/-/read-package-json-fast-2.0.2.tgz#2dcb24d9e8dd50fb322042c8c35a954e6cc7ac9e"
+  integrity sha512-5fyFUyO9B799foVk4n6ylcoAktG/FbE3jwRKxvwaeSrIunaoMc0u81dzXxjeAFKOce7O5KncdfwpGvvs6r5PsQ==
+  dependencies:
+    json-parse-even-better-errors "^2.3.0"
+    npm-normalize-package-bin "^1.0.1"
 
 "read-package-json@1 || 2", read-package-json@^2.0.0, read-package-json@^2.0.13, read-package-json@^2.1.1:
   version "2.1.1"
