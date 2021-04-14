@@ -9375,10 +9375,10 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   resolved "https://registry.yarnpkg.com/nested-error-stacks/-/nested-error-stacks-2.1.0.tgz#0fbdcf3e13fe4994781280524f8b96b0cdff9c61"
   integrity sha512-AO81vsIO1k1sM4Zrd6Hu7regmJN1NSiAja10gc4bX3F0wd+9rQmcuHQaHVQCYIEC8iFXnE+mavh23GOt7wBgug==
 
-netlify-cli@3.17.3:
-  version "3.17.3"
-  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-3.17.3.tgz#12ceb4bc514f655980afff67421595a0601bb859"
-  integrity sha512-/rz/nzdQNghuJ2qcPuMSpCxWFq1GtpUjVd43iAMTuYImhGSY6Hwi40zFU22SgecHEJaLGJDp+c1kDc9Cyd9X9g==
+netlify-cli@3.18.0:
+  version "3.18.0"
+  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-3.18.0.tgz#7f1b89117718cbdb0dad299acd162ecd5befc7db"
+  integrity sha512-l1E6a4y91X4li+HS95pPDTZQ7TQhwr/2NJ62RZO2LvuGKOzlRusbwzSL+anah5NlTmoja54h3e8IxcQh6yzo9A==
   dependencies:
     "@netlify/build" "^10.3.0"
     "@netlify/config" "^5.12.0"
@@ -9435,6 +9435,7 @@ netlify-cli@3.17.3:
     inquirer "^6.5.1"
     inquirer-autocomplete-prompt "^1.0.1"
     is-docker "^2.0.0"
+    is-plain-obj "^2.1.0"
     isexe "^2.0.0"
     jwt-decode "^3.0.0"
     lambda-local "^1.7.1"
@@ -9454,6 +9455,7 @@ netlify-cli@3.17.3:
     oclif-plugin-completion "^0.6.0"
     open "^7.0.0"
     ora "^4.1.1"
+    p-event "^4.2.0"
     p-filter "^2.1.0"
     p-wait-for "^3.0.0"
     parse-github-url "^1.0.2"
@@ -10283,7 +10285,7 @@ p-event@^2.1.0:
   dependencies:
     p-timeout "^2.0.1"
 
-p-event@^4.0.0:
+p-event@^4.0.0, p-event@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/p-event/-/p-event-4.2.0.tgz#af4b049c8acd91ae81083ebd1e6f5cae2044c1b5"
   integrity sha512-KXatOjCRXXkSePPb1Nbi0p0m+gQAwdlbhi4wQKJPI1HsMQS9g+Sqp2o+QHziPr7eYJyOZet836KoHEVM1mwOrQ==
