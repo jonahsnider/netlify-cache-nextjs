@@ -6,6 +6,15 @@ interface NetlifyUtils {
 		restore: (path: string, options?: Partial<{cwd: string}>) => Promise<boolean>;
 		save: (path: string, options?: Partial<{digests: string[]; cwd: string; ttl: number}>) => Promise<boolean>;
 	};
+	build: {
+		failBuild: (message: string) => unknown;
+		failPlugin: (message: string) => unknown;
+		cancelBuild: (message: string) => unknown;
+	};
+	status: {
+		/** @see https://docs.netlify.com/configure-builds/build-plugins/create-plugins/#logging */
+		show: (status: {title?: string; summary: string; text?: string}) => unknown;
+	};
 }
 
 interface NetlifyInputs {
@@ -64,9 +73,12 @@ module.exports = {
 		console.log(`${paths.absolute.buildDir} ${existsSync(paths.absolute.buildDir) ? 'exists' : 'does not exist'} on disk`);
 
 		if (success) {
-			console.log(`Restored the cached ${paths.buildDirName} folder at the location \`${paths.absolute.buildDir}\``);
+			const message = `Restored the cached ${paths.buildDirName} folder at the location ${paths.absolute.buildDir}`;
+
+			console.log(message);
+			utils.status.show({summary: `Restored the ${paths.buildDirName} folder`, text: message});
 		} else {
-			console.log(`Couldn't restore the cache for the ${paths.buildDirName} folder at the location \`${paths.absolute.buildDir}\``);
+			utils.build.failPlugin(`Couldn't restore the cache for the ${paths.buildDirName} folder at the location ${paths.absolute.buildDir}`);
 		}
 	},
 	// Cache file/directory for future builds.
@@ -85,9 +97,12 @@ module.exports = {
 		});
 
 		if (success) {
-			console.log(`Cached the ${paths.buildDirName} folder at the location \`${paths.absolute.buildDir}\``);
+			const message = `Cached the ${paths.buildDirName} folder at the location ${paths.absolute.buildDir}`;
+
+			console.log(message);
+			utils.status.show({summary: `Saved the ${paths.buildDirName} folder`, text: message});
 		} else {
-			console.log(`Couldn't cache the ${paths.buildDirName} folder at the location \`${paths.absolute.buildDir}\``);
+			utils.build.failPlugin(`Couldn't cache the ${paths.buildDirName} folder at the location ${paths.absolute.buildDir}`);
 		}
 	}
 };
