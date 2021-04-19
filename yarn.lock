@@ -10691,10 +10691,10 @@ prepend-http@^2.0.0:
   resolved "https://registry.yarnpkg.com/prepend-http/-/prepend-http-2.0.0.tgz#e92434bfa5ea8c19f41cdfd401d741a3c819d897"
   integrity sha1-6SQ0v6XqjBn0HN/UAddBo8gZ2Jc=
 
-prettier-config-xo@1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/prettier-config-xo/-/prettier-config-xo-1.0.3.tgz#48119d35197c34b4801a49ca66b4eaf30f052d4b"
-  integrity sha512-9DyoOmSkmgxIzaizEx3zJFPvJ/9kaF9FyLU43LWwZapjM5+UIij0pxlvpNJchXdx0nRSXucyUXHA3cONUI2npg==
+prettier-config-xo@1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/prettier-config-xo/-/prettier-config-xo-1.0.4.tgz#2f183746241ac083c1d73cb67e35682c7757d323"
+  integrity sha512-hbOEk+6W1CPU2O5T0LYi/EAg0C2ytUepJdwlWtuFdzj3hEqcnhi0AaRHC3mSprpAZdb/gnF9gmP/Mv6gxcKg+A==
 
 prettier-linter-helpers@^1.0.0:
   version "1.0.0"
