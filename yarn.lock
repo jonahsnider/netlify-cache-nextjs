@@ -1360,6 +1360,11 @@
   resolved "https://registry.yarnpkg.com/@netlify/plugins-list/-/plugins-list-2.7.0.tgz#b70c5fcf6faa58cfe2bed353ef46abbd29164764"
   integrity sha512-h3qcdOMM3oS4Y8ii+O2+vHKp1mhooFLoINRbNAyLqKOHWKwDjYJ5yu7o3yARfOCn5iDaA3GrZ2SuD7+oKVe4FQ==
 
+"@netlify/plugins-list@^2.8.0":
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/@netlify/plugins-list/-/plugins-list-2.8.0.tgz#5af55cdceccf3dec03f3e49717c9e0fa9f676b07"
+  integrity sha512-bjmObzm6qrZigS6ht85zgyHGTsk8dk3OspvQ3BED4VWFMDhl323WwswSJIQg2j7EdxEEOvGsM+gbh0FFWl6pqg==
+
 "@netlify/run-utils@^1.0.6":
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/@netlify/run-utils/-/run-utils-1.0.6.tgz#557d52c5a0d5c86d948be7a89e9e566f999faf63"
@@ -1485,6 +1490,38 @@
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/@netlify/zip-it-and-ship-it/-/zip-it-and-ship-it-3.6.0.tgz#2e6973b43d37c3644d9212eb02eadceaef4b9f5a"
   integrity sha512-vuu8VCtBFSa78lcPMrmbhWexrNCOwZdqtprXYrKoAdr3rU+L8jTfN1VjW7YEqIBICbA74ESH6HZjq4slLoMC9Q==
+  dependencies:
+    archiver "^4.0.0"
+    array-flat-polyfill "^1.0.1"
+    common-path-prefix "^2.0.0"
+    cp-file "^7.0.0"
+    del "^5.1.0"
+    elf-cam "^0.1.1"
+    end-of-stream "^1.4.4"
+    esbuild "^0.11.0"
+    filter-obj "^2.0.1"
+    find-up "^4.1.0"
+    glob "^7.1.6"
+    junk "^3.1.0"
+    locate-path "^5.0.0"
+    make-dir "^3.1.0"
+    merge-options "^3.0.4"
+    minimatch "^3.0.4"
+    p-map "^3.0.0"
+    path-exists "^4.0.0"
+    pkg-dir "^4.2.0"
+    precinct "^6.3.1"
+    read-package-json-fast "^2.0.2"
+    require-package-name "^2.0.1"
+    resolve "^2.0.0-next.1"
+    semver "^6.3.0"
+    unixify "^1.0.0"
+    yargs "^15.4.1"
+
+"@netlify/zip-it-and-ship-it@^3.7.0":
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/@netlify/zip-it-and-ship-it/-/zip-it-and-ship-it-3.7.0.tgz#ad936b55444cb8103e57f58d609cd0fe1fcb2b38"
+  integrity sha512-WPdJ8UulZxv+Niobjp49v8TO2+7V7Kks+1me4Zl4zuv09z8ZTE2/6b8bOCnB+tysTINrmTfi8ZMweB44gyLFLg==
   dependencies:
     archiver "^4.0.0"
     array-flat-polyfill "^1.0.1"
@@ -9395,18 +9432,18 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   resolved "https://registry.yarnpkg.com/nested-error-stacks/-/nested-error-stacks-2.1.0.tgz#0fbdcf3e13fe4994781280524f8b96b0cdff9c61"
   integrity sha512-AO81vsIO1k1sM4Zrd6Hu7regmJN1NSiAja10gc4bX3F0wd+9rQmcuHQaHVQCYIEC8iFXnE+mavh23GOt7wBgug==
 
-netlify-cli@3.21.3:
-  version "3.21.3"
-  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-3.21.3.tgz#3919d3c88ce868b837a7ebdc2d3f783208b95bd5"
-  integrity sha512-8Lbn4xrF6VEtVq/dHYq94tx+TxEq056NylzvYHqoKsvGjjnmSw5a8SulcuLl9AvfM/n8gnzqsgIpHTr6In1vNQ==
+netlify-cli@3.21.5:
+  version "3.21.5"
+  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-3.21.5.tgz#2d137a163a1db42b1db837b9f90055a71f25b9ee"
+  integrity sha512-ilBWupjt7lLMVuRMrSgA/dY0VDGbeGJe125FyJt8JbJ++CMXJdBPLSOAkhDoIO3v4aP9Mrw1y4PLEih6v2W6bg==
   dependencies:
     "@netlify/build" "^11.2.2"
     "@netlify/config" "^6.0.2"
     "@netlify/framework-info" "^3.3.0"
     "@netlify/plugin-edge-handlers" "^1.11.6"
-    "@netlify/plugins-list" "^2.7.0"
+    "@netlify/plugins-list" "^2.8.0"
     "@netlify/traffic-mesh-agent" "^0.27.10"
-    "@netlify/zip-it-and-ship-it" "^3.6.0"
+    "@netlify/zip-it-and-ship-it" "^3.7.0"
     "@oclif/command" "^1.6.1"
     "@oclif/config" "^1.15.1"
     "@oclif/errors" "^1.3.4"
