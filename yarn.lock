@@ -9075,7 +9075,7 @@ mem@^1.1.0:
   dependencies:
     mimic-fn "^1.0.0"
 
-memoize-one@^5.1.1:
+memoize-one@5.1.1, memoize-one@^5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/memoize-one/-/memoize-one-5.1.1.tgz#047b6e3199b508eaec03504de71229b8eb1d75c0"
   integrity sha512-HKeeBpWvqiVJD57ZUAsJNm71eHTykffzcLZVYWiVfQeI1rJtuEaS7hQiEpWfVVk18donPwJEcFKIkCmPJNOhHA==
@@ -9432,10 +9432,10 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   resolved "https://registry.yarnpkg.com/nested-error-stacks/-/nested-error-stacks-2.1.0.tgz#0fbdcf3e13fe4994781280524f8b96b0cdff9c61"
   integrity sha512-AO81vsIO1k1sM4Zrd6Hu7regmJN1NSiAja10gc4bX3F0wd+9rQmcuHQaHVQCYIEC8iFXnE+mavh23GOt7wBgug==
 
-netlify-cli@3.21.5:
-  version "3.21.5"
-  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-3.21.5.tgz#2d137a163a1db42b1db837b9f90055a71f25b9ee"
-  integrity sha512-ilBWupjt7lLMVuRMrSgA/dY0VDGbeGJe125FyJt8JbJ++CMXJdBPLSOAkhDoIO3v4aP9Mrw1y4PLEih6v2W6bg==
+netlify-cli@3.21.6:
+  version "3.21.6"
+  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-3.21.6.tgz#b2e95b565ceeb568aa14f5b51a88ab936d24f9d0"
+  integrity sha512-Tchi7zB54Ri5DWlr8DqhUUhWkz/GzjOBN2iTODfdzyZ3ig4n6nD1QUSKBKVSwseTz9IIp8CKdhKWpssnnf8pug==
   dependencies:
     "@netlify/build" "^11.2.2"
     "@netlify/config" "^6.0.2"
@@ -9502,7 +9502,7 @@ netlify-cli@3.21.5:
     lodash "^4.17.20"
     log-symbols "^4.0.0"
     make-dir "^3.0.0"
-    memoize-one "^5.1.1"
+    memoize-one "5.1.1"
     minimist "^1.2.5"
     multiparty "^4.2.1"
     netlify "^6.1.20"
