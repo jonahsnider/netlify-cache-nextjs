@@ -1163,10 +1163,10 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@netlify/build@^11.2.4":
-  version "11.2.4"
-  resolved "https://registry.yarnpkg.com/@netlify/build/-/build-11.2.4.tgz#afa6c5a94941a698267d8aa95643ee9787ab0401"
-  integrity sha512-cp/itdRCzDDTC1rYGnrMRXiX5gGxxa2yCEDWjhxqTiESDsj8d+n5CpmF1ZB8TaR2njVzVKqs2wKH4lDRXBkhAA==
+"@netlify/build@^11.2.5":
+  version "11.2.5"
+  resolved "https://registry.yarnpkg.com/@netlify/build/-/build-11.2.5.tgz#d7b649eeca0886796c769cf4e5958ed0f1b3b0bc"
+  integrity sha512-VjBtlEnCTjrYN9tTrgJdRjkauqN1gQ+fdtoVsZ0Lyz1Ja1LUnIPkCUHhsOmupMlvW/Yyl/QHTSPojg/wpMf1Zw==
   dependencies:
     "@bugsnag/js" "^7.0.0"
     "@netlify/cache-utils" "^1.0.7"
@@ -1195,7 +1195,7 @@
     log-process-errors "^5.1.2"
     make-dir "^3.0.2"
     map-obj "^4.1.0"
-    memoize-one "^5.2.0"
+    memoize-one "^5.2.1"
     os-name "^3.1.0"
     p-event "^4.1.0"
     p-every "^2.0.0"
@@ -1281,6 +1281,34 @@
     indent-string "^4.0.0"
     is-plain-obj "^2.1.0"
     js-yaml "^4.0.0"
+    netlify "^6.1.20"
+    omit.js "^2.0.2"
+    p-locate "^4.1.0"
+    path-exists "^4.0.0"
+    path-type "^4.0.0"
+    toml "^3.0.0"
+    tomlify-j0.4 "^3.0.0"
+    validate-npm-package-name "^3.0.0"
+    yargs "^15.3.0"
+
+"@netlify/config@^6.2.0":
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/@netlify/config/-/config-6.2.0.tgz#9109c49bca04eba4a07d755f40b8a17163d84a29"
+  integrity sha512-CK8GpGf8v10GlY/gLhb27PEc9cWQaVpLi9/KQZhsEiLCmwVV+oLkfev2wOuIuPakTaCWJbwDbNGtCF+o3f3Crg==
+  dependencies:
+    "@ungap/from-entries" "^0.2.1"
+    array-flat-polyfill "^1.0.1"
+    chalk "^3.0.0"
+    deepmerge "^4.2.2"
+    execa "^3.4.0"
+    fast-safe-stringify "^2.0.7"
+    figures "^3.2.0"
+    filter-obj "^2.0.1"
+    find-up "^4.1.0"
+    indent-string "^4.0.0"
+    is-plain-obj "^2.1.0"
+    js-yaml "^4.0.0"
+    map-obj "^4.2.1"
     netlify "^6.1.20"
     omit.js "^2.0.2"
     p-locate "^4.1.0"
@@ -8970,6 +8998,11 @@ map-obj@^4.1.0:
   resolved "https://registry.yarnpkg.com/map-obj/-/map-obj-4.1.0.tgz#b91221b542734b9f14256c0132c897c5d7256fd5"
   integrity sha512-glc9y00wgtwcDmp7GaE/0b0OnxpNJsVf3ael/An6Fe2Q51LLwN1er6sdomLRzz5h0+yMpiYLhWYF5R7HeqVd4g==
 
+map-obj@^4.2.1:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/map-obj/-/map-obj-4.2.1.tgz#e4ea399dbc979ae735c83c863dd31bdf364277b7"
+  integrity sha512-+WA2/1sPmDj1dlvvJmB5G6JKfY9dpn7EVBUL06+y6PoljPkh+6V1QihwxNkbcGxCRjt2b0F9K0taiCuo7MbdFQ==
+
 map-visit@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/map-visit/-/map-visit-1.0.0.tgz#ecdca8f13144e660f1b5bd41f12f3479d98dfb8f"
@@ -9038,10 +9071,10 @@ mem@^1.1.0:
   dependencies:
     mimic-fn "^1.0.0"
 
-memoize-one@^5.2.0:
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/memoize-one/-/memoize-one-5.2.0.tgz#65259224c44b59b9d6648af917108e6867d64d54"
-  integrity sha512-OiKwjWuxDPHRN5yL9gskqJHT1dr9N99AH95ceiwvpXjE6fpcwAtPHDRoe8CFL1+TMrLG9NzO5WerQ32Q35iD4w==
+memoize-one@^5.2.1:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/memoize-one/-/memoize-one-5.2.1.tgz#8337aa3c4335581839ec01c3d594090cebe8f00e"
+  integrity sha512-zYiwtZUcYyXKo/np96AGZAckk+FWWsUdJ3cHGGmld7+AhvcWmQyGCYUh1hc4Q/pkOhb65dQR/pqCyK0cOaHz4Q==
 
 meow@^5.0.0:
   version "5.0.0"
@@ -9395,13 +9428,13 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   resolved "https://registry.yarnpkg.com/nested-error-stacks/-/nested-error-stacks-2.1.0.tgz#0fbdcf3e13fe4994781280524f8b96b0cdff9c61"
   integrity sha512-AO81vsIO1k1sM4Zrd6Hu7regmJN1NSiAja10gc4bX3F0wd+9rQmcuHQaHVQCYIEC8iFXnE+mavh23GOt7wBgug==
 
-netlify-cli@3.21.8:
-  version "3.21.8"
-  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-3.21.8.tgz#c76d24e581b2075b5b8c490a29cd57892d7ebe7e"
-  integrity sha512-aw02grFNU3kes5BzYLggVrmnV1mkNC1cgKhILA+dUTIoKptcB+VFm4ny3CBtNsdti8Q7efax+qvWjbQUVpI1sA==
+netlify-cli@3.21.9:
+  version "3.21.9"
+  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-3.21.9.tgz#013e40ae1b6f0c68c2de00bdfe3b3d2823d5ef44"
+  integrity sha512-GRdQHPz8gVmU1Gy6ZWv/B2t3MjQN2hLHBG4yRY6S7DbRQc8XaY9PLJPrmodycumFdzx6Da+SMmhZrzkKfZ/xSg==
   dependencies:
-    "@netlify/build" "^11.2.4"
-    "@netlify/config" "^6.0.2"
+    "@netlify/build" "^11.2.5"
+    "@netlify/config" "^6.2.0"
     "@netlify/framework-info" "^3.3.0"
     "@netlify/plugin-edge-handlers" "^1.11.6"
     "@netlify/plugins-list" "^2.8.0"
@@ -9465,7 +9498,7 @@ netlify-cli@3.21.8:
     lodash "^4.17.20"
     log-symbols "^4.0.0"
     make-dir "^3.0.0"
-    memoize-one "^5.2.0"
+    memoize-one "^5.2.1"
     minimist "^1.2.5"
     multiparty "^4.2.1"
     netlify "^6.1.20"
