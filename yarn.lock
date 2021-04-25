@@ -1264,33 +1264,6 @@
     validate-npm-package-name "^3.0.0"
     yargs "^15.3.0"
 
-"@netlify/config@^6.0.2":
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/@netlify/config/-/config-6.0.2.tgz#7c51c3846dd84a499ea90faf097d4d28b177ce64"
-  integrity sha512-C94eoPY+cP9CzXor9ERqN5vQVQJcTz0BPo88XexUo6ooQdQoIQSquKypxe4TpJWqaN/b/sBhWkVNWfFNCiI0gg==
-  dependencies:
-    "@ungap/from-entries" "^0.2.1"
-    array-flat-polyfill "^1.0.1"
-    chalk "^3.0.0"
-    deepmerge "^4.2.2"
-    execa "^3.4.0"
-    fast-safe-stringify "^2.0.7"
-    figures "^3.2.0"
-    filter-obj "^2.0.1"
-    find-up "^4.1.0"
-    indent-string "^4.0.0"
-    is-plain-obj "^2.1.0"
-    js-yaml "^4.0.0"
-    netlify "^6.1.20"
-    omit.js "^2.0.2"
-    p-locate "^4.1.0"
-    path-exists "^4.0.0"
-    path-type "^4.0.0"
-    toml "^3.0.0"
-    tomlify-j0.4 "^3.0.0"
-    validate-npm-package-name "^3.0.0"
-    yargs "^15.3.0"
-
 "@netlify/config@^6.2.0":
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/@netlify/config/-/config-6.2.0.tgz#9109c49bca04eba4a07d755f40b8a17163d84a29"
@@ -9428,10 +9401,10 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   resolved "https://registry.yarnpkg.com/nested-error-stacks/-/nested-error-stacks-2.1.0.tgz#0fbdcf3e13fe4994781280524f8b96b0cdff9c61"
   integrity sha512-AO81vsIO1k1sM4Zrd6Hu7regmJN1NSiAja10gc4bX3F0wd+9rQmcuHQaHVQCYIEC8iFXnE+mavh23GOt7wBgug==
 
-netlify-cli@3.21.9:
-  version "3.21.9"
-  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-3.21.9.tgz#013e40ae1b6f0c68c2de00bdfe3b3d2823d5ef44"
-  integrity sha512-GRdQHPz8gVmU1Gy6ZWv/B2t3MjQN2hLHBG4yRY6S7DbRQc8XaY9PLJPrmodycumFdzx6Da+SMmhZrzkKfZ/xSg==
+netlify-cli@3.21.10:
+  version "3.21.10"
+  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-3.21.10.tgz#49ac4d37d85cf34f94a10c8a3898aacbf6aa0e46"
+  integrity sha512-BeKVjN8uO2Ls2Q5cx5l8wvCIs965ETCVnKU/MRnCwAXPN+sgqjAReh3/wAs8Svs0lKdof3zGaQAypDiWOsV3RQ==
   dependencies:
     "@netlify/build" "^11.2.5"
     "@netlify/config" "^6.2.0"
@@ -9502,7 +9475,7 @@ netlify-cli@3.21.9:
     minimist "^1.2.5"
     multiparty "^4.2.1"
     netlify "^6.1.20"
-    netlify-redirect-parser "^3.0.16"
+    netlify-redirect-parser "^3.0.17"
     netlify-redirector "^0.2.1"
     node-fetch "^2.6.0"
     node-version-alias "^1.0.1"
@@ -9534,12 +9507,12 @@ netlify-cli@3.21.9:
     wrap-ansi "^7.0.0"
     write-file-atomic "^3.0.0"
 
-netlify-redirect-parser@^3.0.16:
-  version "3.0.16"
-  resolved "https://registry.yarnpkg.com/netlify-redirect-parser/-/netlify-redirect-parser-3.0.16.tgz#46a4abbbb39d577e4b99c378a1bbbd12eb1f79f4"
-  integrity sha512-K8/CvBZKRfF0A01MntMw/DlZxrixwN8K9Qysswi0VkcE436WhWqp86Nwci4XdX6d389KImnluIWkY4Mhq1MyZQ==
+netlify-redirect-parser@^3.0.17:
+  version "3.0.17"
+  resolved "https://registry.yarnpkg.com/netlify-redirect-parser/-/netlify-redirect-parser-3.0.17.tgz#c9f24d72416e6949bb044b1a7ec3b5ab0dc7196a"
+  integrity sha512-tKAVgpZg2CmNi9QMmdeoN10FTvsXKX5m+dw+ytdN9hVXGy+CWeCN5d0jqIL7wPl6iCXu3MXIIQGC78Q6BB8WJw==
   dependencies:
-    "@netlify/config" "^6.0.2"
+    "@netlify/config" "^6.2.0"
     lodash.isplainobject "^4.0.6"
 
 netlify-redirector@^0.2.1:
