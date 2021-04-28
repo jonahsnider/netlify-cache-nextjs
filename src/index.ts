@@ -78,7 +78,7 @@ module.exports = {
 			console.log(message);
 			utils.status.show({summary: `Restored the ${paths.buildDirName} folder`, text: message});
 		} else {
-			utils.build.failPlugin(`Couldn't restore the cache for the ${paths.buildDirName} folder at the location ${paths.absolute.buildDir}`);
+			console.error(`Couldn't restore the cache for the ${paths.buildDirName} folder at the location ${paths.absolute.buildDir}`);
 		}
 	},
 	// Cache file/directory for future builds.
@@ -102,7 +102,7 @@ module.exports = {
 			console.log(message);
 			utils.status.show({summary: `Saved the ${paths.buildDirName} folder`, text: message});
 		} else {
-			utils.build.failPlugin(`Couldn't cache the ${paths.buildDirName} folder at the location ${paths.absolute.buildDir}`);
+			console.error(`Couldn't cache the ${paths.buildDirName} folder at the location ${paths.absolute.buildDir}`);
 		}
 	}
 };
