@@ -1163,7 +1163,7 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@netlify/build@^11.7.2":
+"@netlify/build@^11.7.3":
   version "11.7.3"
   resolved "https://registry.yarnpkg.com/@netlify/build/-/build-11.7.3.tgz#b303725d09a224e76506a3a9dd4cdd82577d76f5"
   integrity sha512-9YqB/4UfSvnSz5/WlaKlnRDFSZa11E04bUQ/zrD4wbQvspxJCfAVvK+gboqrNj7geg7QLpSk3EuCWhytD5WZOg==
@@ -1264,7 +1264,7 @@
     validate-npm-package-name "^3.0.0"
     yargs "^15.3.0"
 
-"@netlify/config@^6.4.2":
+"@netlify/config@^6.4.2", "@netlify/config@^6.4.3":
   version "6.4.3"
   resolved "https://registry.yarnpkg.com/@netlify/config/-/config-6.4.3.tgz#2a38979cec08b0ede268dd799810664b5fa4e4da"
   integrity sha512-91GdJfbBNNixUjzyScgIesCPT7yMlwqelh5f0z1KJk02wm86BZZwYQl3CrghTX6AoCiu2lryVLrBo8HHG7G9Rw==
@@ -9484,13 +9484,13 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   resolved "https://registry.yarnpkg.com/nested-error-stacks/-/nested-error-stacks-2.1.0.tgz#0fbdcf3e13fe4994781280524f8b96b0cdff9c61"
   integrity sha512-AO81vsIO1k1sM4Zrd6Hu7regmJN1NSiAja10gc4bX3F0wd+9rQmcuHQaHVQCYIEC8iFXnE+mavh23GOt7wBgug==
 
-netlify-cli@3.25.2:
-  version "3.25.2"
-  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-3.25.2.tgz#538630f6e5b60711f6f5313feaa00abee29c4233"
-  integrity sha512-xNCH/97HQM0OC7pnTF9IhJ2Jfeds4qH/9dcy5s4gA5MNwrhVsvdMHz/TsfL/A4ey7sNS5djZjznBNyXHSJUJ4Q==
+netlify-cli@3.26.1:
+  version "3.26.1"
+  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-3.26.1.tgz#3b339e592db8a60110324b6f720ad99c2c7f3594"
+  integrity sha512-VGaL68+wLEhnRMuDm2W49s1x3qtVElSX17lFMR3XnhJFoWHAM4+c/PznzeIlLxlcNQERkYghSSSqKxZ4Xz0inw==
   dependencies:
-    "@netlify/build" "^11.7.2"
-    "@netlify/config" "^6.4.2"
+    "@netlify/build" "^11.7.3"
+    "@netlify/config" "^6.4.3"
     "@netlify/framework-info" "^4.0.0"
     "@netlify/plugin-edge-handlers" "^1.11.7"
     "@netlify/plugins-list" "^2.9.0"
@@ -9579,6 +9579,7 @@ netlify-cli@3.25.2:
     resolve "^1.12.0"
     safe-join "^0.1.3"
     semver "^7.3.4"
+    source-map-support "^0.5.19"
     static-server "^2.2.1"
     strip-ansi-control-characters "^2.0.0"
     to-readable-stream "^2.1.0"
@@ -12304,7 +12305,7 @@ source-map-resolve@^0.6.0:
     atob "^2.1.2"
     decode-uri-component "^0.2.0"
 
-source-map-support@^0.5.6, source-map-support@~0.5.12, source-map-support@~0.5.19:
+source-map-support@^0.5.19, source-map-support@^0.5.6, source-map-support@~0.5.12, source-map-support@~0.5.19:
   version "0.5.19"
   resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.19.tgz#a98b62f86dcaf4f67399648c085291ab9e8fed61"
   integrity sha512-Wonm7zOCIJzBGQdB+thsPar0kYuCIzYvxZwlBa87yi/Mdjv7Tip2cyVbLj5o0cFPN4EVkuTwb3GDDyUx2DGnGw==
