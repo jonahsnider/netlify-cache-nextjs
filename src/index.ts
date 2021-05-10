@@ -29,9 +29,7 @@ interface NetlifyOpts {
 	inputs: NetlifyInputs;
 }
 
-function generateAbsolutePaths(
-	options: Pick<NetlifyOpts, 'inputs'>
-): {
+function generateAbsolutePaths(options: Pick<NetlifyOpts, 'inputs'>): {
 	absolute: {
 		/** The absolute path to the build folder for Next.js. */
 		buildDir: string;
