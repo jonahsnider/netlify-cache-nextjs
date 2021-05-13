@@ -1292,6 +1292,34 @@
     validate-npm-package-name "^3.0.0"
     yargs "^15.3.0"
 
+"@netlify/config@^6.5.0":
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/@netlify/config/-/config-6.5.0.tgz#5f3051b8796ffce90b0754b1940fec4ffbf408a1"
+  integrity sha512-LgsLOwaSlO8L3lE86VyqkA3L5/slnmyMzXHYf527t6daZ57azPyuzKica8D+U5ZQydTtR1B000xVZuqfOcCsfw==
+  dependencies:
+    "@ungap/from-entries" "^0.2.1"
+    array-flat-polyfill "^1.0.1"
+    chalk "^3.0.0"
+    deepmerge "^4.2.2"
+    execa "^3.4.0"
+    fast-safe-stringify "^2.0.7"
+    figures "^3.2.0"
+    filter-obj "^2.0.1"
+    find-up "^4.1.0"
+    indent-string "^4.0.0"
+    is-plain-obj "^2.1.0"
+    js-yaml "^4.0.0"
+    map-obj "^4.0.0"
+    netlify "^6.1.29"
+    omit.js "^2.0.2"
+    p-locate "^4.1.0"
+    path-exists "^4.0.0"
+    path-type "^4.0.0"
+    toml "^3.0.0"
+    tomlify-j0.4 "^3.0.0"
+    validate-npm-package-name "^3.0.0"
+    yargs "^15.3.0"
+
 "@netlify/framework-info@^4.1.0":
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/@netlify/framework-info/-/framework-info-4.1.0.tgz#752c7f49b22af14aede919853a66a5681a6b8a4e"
@@ -9525,13 +9553,13 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   resolved "https://registry.yarnpkg.com/nested-error-stacks/-/nested-error-stacks-2.1.0.tgz#0fbdcf3e13fe4994781280524f8b96b0cdff9c61"
   integrity sha512-AO81vsIO1k1sM4Zrd6Hu7regmJN1NSiAja10gc4bX3F0wd+9rQmcuHQaHVQCYIEC8iFXnE+mavh23GOt7wBgug==
 
-netlify-cli@3.29.7:
-  version "3.29.7"
-  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-3.29.7.tgz#ade8d9df64669d402f4d14aea861aab95d6540ce"
-  integrity sha512-ycCOANyveCBEgwUecsBnmQsabjLyAsBhmxuOL0HXDOd8E/BY7CDIj8kU10Kvs4OYv6iK1+et3GNgesQxjPpj+g==
+netlify-cli@3.29.8:
+  version "3.29.8"
+  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-3.29.8.tgz#f821950498d4979be485158086444e0a4f304116"
+  integrity sha512-/vTH1mrq5KSC0MlOV6Hjq2mUf4rTaKAxYDa81McMI0NnXhV5UgdgfmK17dKfujhRDaf/XrGSunLQLeBoJJ5Peg==
   dependencies:
     "@netlify/build" "^11.13.0"
-    "@netlify/config" "^6.4.4"
+    "@netlify/config" "^6.5.0"
     "@netlify/framework-info" "^4.1.0"
     "@netlify/plugin-edge-handlers" "^1.11.7"
     "@netlify/plugins-list" "^2.11.2"
