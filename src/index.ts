@@ -53,9 +53,9 @@ function generateAbsolutePaths(options: Pick<NetlifyOpts, 'inputs'>): {
 	return {
 		absolute: {
 			buildDir: absoluteBuildDirPath,
-			manifest: manifestPath
+			manifest: manifestPath,
 		},
-		buildDirName
+		buildDirName,
 	};
 }
 
@@ -91,7 +91,7 @@ module.exports = {
 		console.log(`${paths.absolute.buildDir} ${existsSync(paths.absolute.buildDir) ? 'exists' : 'does not exist'} on disk`);
 
 		const success = await utils.cache.save(paths.absolute.buildDir, {
-			digests: [paths.absolute.manifest]
+			digests: [paths.absolute.manifest],
 		});
 
 		if (success) {
@@ -102,5 +102,5 @@ module.exports = {
 		} else {
 			console.error(`Couldn't cache the ${paths.buildDirName} folder at the location ${paths.absolute.buildDir}`);
 		}
-	}
+	},
 };
