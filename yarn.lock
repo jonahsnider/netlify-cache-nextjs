@@ -1231,19 +1231,19 @@
     uuid "^8.0.0"
     yargs "^15.3.1"
 
-"@netlify/cache-utils@2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@netlify/cache-utils/-/cache-utils-2.0.1.tgz#38ff6569e1e3fb0d9ad96ed50c1405cd9412bd41"
-  integrity sha512-fAw8rMnl14f9TZmKV1g8+/8yVriitfNf4KcdfGPpGLpmQtpnSiynbzhpOLBHsLtViBCJ8O1vy24LK6CJx9JoqA==
+"@netlify/cache-utils@2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@netlify/cache-utils/-/cache-utils-2.0.2.tgz#0263ccd20d57164e137ca3e249ef3a8c2a775ad8"
+  integrity sha512-JqmFPDvzSv/emIYUjnM5aN630igsvZ/LcODSGEP2dyLxhmL5XirkEljzl4M+XBnVF4Ah0+EKBwo2ofHpdyeTJA==
   dependencies:
     array-flat-polyfill "^1.0.1"
     cpy "^8.1.0"
     del "^5.1.0"
     get-stream "^6.0.0"
     globby "^10.0.2"
-    locate-path "^5.0.0"
+    locate-path "^6.0.0"
     make-dir "^3.1.0"
-    move-file "^1.2.0"
+    move-file "^2.0.0"
     path-exists "^4.0.0"
     readdirp "^3.4.0"
 
@@ -9576,6 +9576,13 @@ move-file@^1.2.0:
     cp-file "^6.1.0"
     make-dir "^3.0.0"
     path-exists "^3.0.0"
+
+move-file@^2.0.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/move-file/-/move-file-2.1.0.tgz#3bec9d34fbe4832df6865f112cda4492b56e8507"
+  integrity sha512-i9qLW6gqboJ5Ht8bauZi7KlTnQ3QFpBCvMvFfEcHADKgHGeJ9BZMO7SFCTwHPV9Qa0du9DYY1Yx3oqlGt30nXA==
+  dependencies:
+    path-exists "^4.0.0"
 
 mri@^1.1.0:
   version "1.1.6"
