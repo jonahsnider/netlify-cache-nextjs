@@ -1233,16 +1233,17 @@
     uuid "^8.0.0"
     yargs "^15.3.1"
 
-"@netlify/cache-utils@2.0.2":
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/@netlify/cache-utils/-/cache-utils-2.0.2.tgz#0263ccd20d57164e137ca3e249ef3a8c2a775ad8"
-  integrity sha512-JqmFPDvzSv/emIYUjnM5aN630igsvZ/LcODSGEP2dyLxhmL5XirkEljzl4M+XBnVF4Ah0+EKBwo2ofHpdyeTJA==
+"@netlify/cache-utils@2.0.3":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@netlify/cache-utils/-/cache-utils-2.0.3.tgz#1bab8931fa16e32f3354073eddfeb5a2d0e5c042"
+  integrity sha512-820dYhacTHXKxpYm81VlmCJ48ySGj+6GZi1oPLevdTSkMXGM1BphBKUjM/r9+GUE1ocGOh8Vdt3PsDp8f7gS4w==
   dependencies:
     array-flat-polyfill "^1.0.1"
     cpy "^8.1.0"
     del "^5.1.0"
     get-stream "^6.0.0"
     globby "^10.0.2"
+    junk "^3.1.0"
     locate-path "^6.0.0"
     make-dir "^3.1.0"
     move-file "^2.0.0"
