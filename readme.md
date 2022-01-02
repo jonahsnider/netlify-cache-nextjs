@@ -1,3 +1,9 @@
+# ⚠️ DEPRECATED ⚠️
+
+This plugin is no longer maintained.
+
+Please use [Netlify's official build plugin for Next.js](https://github.com/netlify/netlify-plugin-nextjs) for the same caching functionality.
+
 # [Netlify Next.js cache](https://app.netlify.com/plugins/netlify-plugin-cache-nextjs/install)
 
 Cache the Next.js build folder in Netlify builds.
