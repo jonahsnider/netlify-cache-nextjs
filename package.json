@@ -13,12 +13,12 @@
 	"devDependencies": {
 		"eslint-plugin-prettier": "4.0.0",
 		"netlify-cli": "8.0.10",
-		"prettier": "2.5.0",
+		"prettier": "2.5.1",
 		"prettier-config-xo": "2.0.0",
 		"semantic-release": "18.0.1",
 		"tsdx": "0.14.1",
 		"tslib": "2.3.1",
-		"typescript": "4.5.2"
+		"typescript": "4.5.4"
 	},
 	"engines": {
 		"node": ">=8.3.0"
