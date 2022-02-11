@@ -12,7 +12,7 @@
 	},
 	"devDependencies": {
 		"eslint-plugin-prettier": "4.0.0",
-		"netlify-cli": "8.0.10",
+		"netlify-cli": "8.0.21",
 		"prettier": "2.5.0",
 		"prettier-config-xo": "2.0.0",
 		"semantic-release": "18.0.1",
